@@ -175,5 +175,18 @@ Licensed under **Apache License 2.0**; see [LICENSE.txt](LICENSE.txt).
 
 ---
 
+## Authors
+
+**Sizhe Tan & GPT-Obot**
+
+---
+
+## 📚 DBM-SI Series Navigation
+
+See:\
+[./docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Series-of-gitHub-Repositories.md](./docs/DBM-SI-Series-of-gitHub-Repositories/DBM-SI-Series-of-gitHub-Repositories.md)
+
+---
+
 **Guiding principle:** *Beyond matching is not beyond evidence. Weak signals may guide inquiry, but only validated evidence should acquire structural authority.*
 
