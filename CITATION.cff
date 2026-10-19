@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this research repository, please cite it using the metadata below."
+type: software
+title: "Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence"
+authors:
+  - family-names: Tan
+    given-names: Sizhe
+  - name: GPT-Obot
+    affiliation: "AI research collaborator (OpenAI ChatGPT)"
+repository-code: "https://github.com/sizhet/Beyond-Matching-OTHERS-and-Directional-Weak-Evidence-Intelligence"
+version: 1.0.0
+date-released: 2026-10-16
+license: Apache-2.0
+abstract: >-
+  A conceptual and algorithmic research framework for scoring heterogeneous,
+  weak, and not-yet-formally-matched evidence. The repository investigates
+  directional measurement sails, reputational and collective weak signals,
+  perspective-dependent scoring, open structural scoring growth, and evidence
+  governance. Version 1.0.0 presents research proposals and validation plans,
+  not experimentally established performance claims.
+keywords:
+  - structural intelligence
+  - beyond matching
+  - OTHERS
+  - weak evidence
+  - directional scoring
+  - reputational intelligence
+  - perspective distance
+  - structural growth
+  - evidence governance
