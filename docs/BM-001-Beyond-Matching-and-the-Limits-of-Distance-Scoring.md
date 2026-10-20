@@ -12,6 +12,12 @@ Distance and similarity are foundational tools for search, classification, retri
 
 **Keywords:** distance scoring; cross-domain evaluation; similarity; OTHERS; weak evidence; perspective distance; subjective structural intelligence; open-world intelligence; structural growth
 
+---
+
+![Fig-001-Beyond-Matching-Grand-Map.png](../figures/Fig-001-Beyond-Matching-Grand-Map.png)
+
+---
+
 ## 1. The Problem: When Matching Is Not Enough
 
 Many computational systems evaluate two objects by first mapping them into a shared representation and then computing a score. This works well when the representation captures the dimensions relevant to the task. It becomes less reliable when the task requires relations outside that representation.
