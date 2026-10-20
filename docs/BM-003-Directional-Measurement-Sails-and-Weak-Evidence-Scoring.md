@@ -12,6 +12,12 @@ Conventional similarity and distance scoring operate primarily on features that 
 
 **Keywords:** directional measurement sails; weak evidence; OTHERS; reputational intelligence; perspective distance; evidence provenance; correlation control; open structural learning; structural intelligence.
 
+---
+
+![Fig-003-Directional-Measurement-Sails.png](../figures/Fig-003-Directional-Measurement-Sails.png)
+
+---
+
 ## 1. Problem: useful evidence before formal matching
 
 A feature-based matcher asks whether two objects agree on a predefined representation. An open-world evaluator must sometimes act before that representation is complete. A company may exhibit a pattern of troubling employee departures before any single measurable financial indicator deteriorates; an animal may respond to the sudden flight of nearby animals without identifying the underlying threat. In both examples, a weak signal can matter without proving its interpretation.

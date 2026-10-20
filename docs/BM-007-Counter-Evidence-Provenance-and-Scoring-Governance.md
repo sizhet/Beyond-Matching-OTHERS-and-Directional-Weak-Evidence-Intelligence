@@ -13,6 +13,10 @@ Open evidence scoring can exploit information that formal feature matching does 
 
 ---
 
+![Fig-006-Evidence-Perspective-Decision-Planes.png](../figures/Fig-006-Evidence-Perspective-Decision-Planes.png)
+
+---
+
 ## 1. Why Open Scoring Requires Stronger Governance
 
 In the series' earlier papers, **OTHERS** denotes observations not adequately represented by the currently matched feature or metric schema. DMS proposes directional responses to these observations, and Open Structural Scoring Growth (OSSG) proposes a path from weak signals to reusable structures. Each step increases both capability and potential failure surface.

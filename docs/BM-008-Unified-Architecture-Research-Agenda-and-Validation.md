@@ -14,6 +14,10 @@ An intelligent evaluator cannot assume that all consequential evidence has alrea
 
 ---
 
+![Fig-007-Unified-Open-Scoring-Architecture.png](../figures/Fig-007-Unified-Open-Scoring-Architecture.png)
+
+---
+
 ## 1. The Research Problem and Its Boundaries
 
 Many scoring systems start with a representation and then compute similarity, distance, or ranking. This is effective when the representation contains the variables relevant to the task. The problem arises when consequential signals remain outside the current schema: the model may be numerically precise about the *wrong set of variables*. This is a hypothesis about a failure mode, not a claim that AI is generally inferior to human cross-domain reasoning.
