@@ -13,6 +13,12 @@ Formal matching is powerful precisely because it restricts comparisons to repres
 
 **Keywords:** OTHERS; open evidence space; weak evidence; cross-domain scoring; context; reputation; provenance; counter-evidence; structural learning; uncertainty; SI; SSI
 
+---
+
+![Fig-002-Matching-vs-Perspective-Distance.png](../figures/Fig-002-Matching-vs-Perspective-Distance.png)
+
+---
+
 ## 1. The Missing Space in Formal Matching
 
 In a closed comparison task, a scoring system can define its features, establish correspondence, and compute a similarity or distance. The design is efficient and auditable. The difficulty arises when *relevance* extends beyond what the current representation can match.
