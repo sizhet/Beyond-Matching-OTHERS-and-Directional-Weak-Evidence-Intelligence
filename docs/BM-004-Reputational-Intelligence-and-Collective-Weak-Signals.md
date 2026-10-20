@@ -14,6 +14,10 @@ A substantial share of useful judgment is mediated by signals that do not consti
 
 ---
 
+![Fig-004-Reputational-Collective-Signals.png](../figures/Fig-004-Reputational-Collective-Signals.png)
+
+---
+
 ## 1. The Problem: Collective Judgment Before Formal Matching
 
 Classical similarity scoring presumes that relevant features can be extracted, aligned, and compared. In real environments, decision makers frequently encounter assessments such as:
