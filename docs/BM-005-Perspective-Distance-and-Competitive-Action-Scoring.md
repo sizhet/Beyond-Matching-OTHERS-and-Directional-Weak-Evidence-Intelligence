@@ -14,10 +14,6 @@ A similarity function measures resemblance in a representation; it does not, by 
 
 ---
 
-![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
-
----
-
 ## 1. The Question Beyond Matching
 
 Conventional matching answers: *How similar are two objects under a chosen representation?* A situated agent must ask different questions:

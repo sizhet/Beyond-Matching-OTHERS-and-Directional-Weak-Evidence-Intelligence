@@ -15,6 +15,10 @@ We propose **Open Structural Scoring Growth (OSSG)**: a governed learning cycle 
 
 ---
 
+![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
+
+---
+
 ## 1. The Problem: A Scoring System Cannot Predefine Everything That Matters
 
 A conventional scoring pipeline commonly assumes:
