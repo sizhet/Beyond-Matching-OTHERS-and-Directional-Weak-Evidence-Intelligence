@@ -56,29 +56,29 @@ Unlike a literal particle, a signal has no required physical direction. Its *dir
 
 Let an evaluation instance be `(x, c, p, t)`, where `x` is the target object, `c` is context, `p` is the declared perspective, and `t` is evaluation time. Let the evidence set be
 
-\[
+$$
 \mathcal E(x,c,t)=\{e_1,\ldots,e_n\}.
-\]
+$$
 
 Each evidence unit has a structured envelope:
 
-\[
-e_i=(z_i,s_i,\tau_i,c_i,\pi_i,\gamma_i),\]
+$$
+e_i=(z_i,s_i,\tau_i,c_i,\pi_i,\gamma_i),$$
 
 where `z_i` is signal content or representation, `s_i` is source identity, `τ_i` is observation time, `c_i` is context, `π_i` is provenance, and `γ_i` is an evidence-group or dependence identifier. Missing values must be explicit, not silently imputed as trustworthy.
 
 Let the set of current evaluation directions be
 
-\[
+$$
 \mathcal U_p=\{u_1,\ldots,u_K\}.
-\]
+$$
 
 Directions are *perspective-conditioned*: the same evidence can support innovation while opposing capital preservation.
 
 For each direction `k`, define a signed sail response:
 
-\[
-r_{ik}=g_{\theta_k}(z_i,u_k,c,p)\in[-1,1].\]
+$$
+r_{ik}=g_{\theta_k}(z_i,u_k,c,p)\in[-1,1].$$
 
 The response is a claim about the signal's *bearing on an evaluation axis*, not a probability that the signal is true. Evidence credibility is represented separately by `q_i ∈ [0,1]`, preferably calibrated using historical outcomes and source audits.
 
@@ -86,17 +86,17 @@ The response is a claim about the signal's *bearing on an evaluation axis*, not 
 
 A deliberately simple first approximation is
 
-\[
+$$
 R_k^{\mathrm{raw}}=\sum_{i=1}^{n}w_{ik}q_i r_{ik},
-\]
+$$
 
 where `w_ik ≥ 0` is the context- and direction-specific influence weight. This is a **proposed aggregation rule**, not a universal distance law. It can double-count repeated or correlated reports and may be unbounded as evidence volume grows.
 
 A bounded, normalized variant is
 
-\[
+$$
 R_k=\frac{\sum_i w_{ik}q_i r_{ik}}{\epsilon+\sum_i w_{ik}q_i},\qquad \epsilon>0.
-\]
+$$
 
 The denominator prevents a larger number of observations from mechanically inflating magnitude, but it does **not** solve dependence or coordinated manipulation. We therefore recommend a grouped formulation.
 
@@ -104,15 +104,15 @@ The denominator prevents a larger number of observations from mechanically infla
 
 Partition evidence into source-dependence groups `G_1,...,G_J` using provenance, common upstream claims, and propagation links. First aggregate within a group:
 
-\[
+$$
 h_{jk}=\frac{\sum_{i\in G_j}w_{ik}q_i r_{ik}}{\epsilon+\sum_{i\in G_j}w_{ik}q_i}.
-\]
+$$
 
 Then aggregate group contributions:
 
-\[
+$$
 R_k=\frac{\sum_j \alpha_{jk}h_{jk}}{\epsilon+\sum_j\alpha_{jk}},
-\]
+$$
 
 with group weights `α_jk` based on independently justified quality and relevance. Grouping is an approximation: shared causal origins can be unknown, and group weights must not be interpreted as independence guarantees.
 
@@ -154,9 +154,9 @@ DMS permits three levels of sail construction:
 
 The proposed learning objective may combine directional prediction loss, calibration loss, complexity penalty, and dependence/robustness penalties:
 
-\[
+$$
 \mathcal L=\mathcal L_{\mathrm{prediction}}+\lambda_c\mathcal L_{\mathrm{calibration}}+\lambda_r\mathcal L_{\mathrm{robustness}}+\lambda_s\Omega(\theta).
-\]
+$$
 
 The objective is a design template. Exact losses depend on the task, outcome availability, and whether a direction is ordinal, probabilistic, or utility-related. When ground truth is unavailable, do not equate agreement among observers with correctness.
 
@@ -170,9 +170,9 @@ A useful update record contains: previous score, new evidence IDs, changed respo
 
 The OTHERS space should not remain permanently unstructured. Repeated, predictive, directionally consistent weak signals can generate candidate explicit features:
 
-\[
+$$
 O_t\rightarrow\text{directional effects}\rightarrow\text{candidate feature}\rightarrow\text{validation}\rightarrow K_{t+1}.
-\]
+$$
 
 Validated candidates may be promoted into formal metrics, CCC structures, principles, or reusable PIRP/PIRU units. The original signal and its provenance remain accessible; promotion is reversible if counter-evidence invalidates the abstraction.
 

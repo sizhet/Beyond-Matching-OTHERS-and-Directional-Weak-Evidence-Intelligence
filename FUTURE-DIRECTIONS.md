@@ -47,9 +47,9 @@ Proposed deliverables:
 
 For an object or candidate `x`, a provisional sail response can be written as:
 
-\[
+$$
 R_k(x)=\sum_{i=1}^{n} w_i q_i\,g(\mathbf v_i,\mathbf u_k),
-\]
+$$
 
 where `k` denotes a scoring direction, `w_i` a context-sensitive weight, `q_i` an estimated reliability term, `v_i` a signal representation, `u_k` a directional reference, and `g` a response function. This is a *candidate architecture*, not a validated estimator. Dependence between sources must be accounted for separately; naive summation can overcount repeated reports.
 

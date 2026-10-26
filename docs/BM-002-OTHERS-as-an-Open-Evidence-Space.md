@@ -68,7 +68,7 @@ This is a *set-level definition*, not a guarantee that $\mathcal O$ can be exhau
 Residual evidence may overlap with matched evidence or with other residual signals. An interview, news report, and market movement may all reflect the same underlying event. Therefore
 
 $$
-\operatorname{Info}(E,M,O)\neq\operatorname{Info}(E)+\operatorname{Info}(M)+\operatorname{Info}(O)
+operatorname{Info}(E,M,O)\neq operatorname{Info}(E)+operatorname{Info}(M)+operatorname{Info}(O)
 $$
 
 in general. Any fusion mechanism must account for duplicated or correlated sources.

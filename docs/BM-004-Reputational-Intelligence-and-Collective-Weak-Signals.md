@@ -49,9 +49,9 @@ A **weak-evidence item** is a potentially decision-relevant observation or claim
 
 Let the scoring evidence space be partitioned conceptually into matched components and residual components:
 
-\[
+$$
 \mathcal E_t = \mathcal E_{\mathrm{matched},t}\ \cup\ \mathcal O_t.
-\]
+$$
 
 The partition depends on the current schema and context; it need not be disjoint in a literal data-storage implementation. Reputational evidence may initially reside in \(\mathcal O_t\), then become formally represented as reliable predictors after validation.
 
@@ -77,17 +77,17 @@ A scalar reputation such as “good” or “bad” loses important structure. T
 
 Define a set of scoring directions:
 
-\[
+$$
 \mathcal U_t = \{u_1,\ldots,u_K\},
-\]
+$$
 
 such as safety, reliability, innovation, opportunity, or trustworthiness. These are **evaluation directions**, not necessarily Euclidean axes.
 
 For target \(x\), context \(c\), and time \(t\), define a provisional directional field:
 
-\[
+$$
 \mathbf R(x\mid c,t) = [R_1(x\mid c,t),\ldots,R_K(x\mid c,t)].
-\]
+$$
 
 Each component is accompanied by quality, uncertainty, provenance, and coverage information. A favorable signal on one direction must not automatically increase all others.
 
@@ -95,9 +95,9 @@ Each component is accompanied by quality, uncertainty, provenance, and coverage 
 
 Following the companion paper BM-003, a sail is a task-specific response mechanism that maps heterogeneous evidence into a directional effect:
 
-\[
+$$
 \rho_{ik}=g_\theta(e_i,u_k,c,t),
-\]
+$$
 
 where \(e_i\) is an evidence item, \(u_k\) is the direction, and \(g_\theta\) may be a rule, learned model, or structured inference function. The response can be positive, negative, near zero, or undefined.
 
@@ -131,17 +131,17 @@ Privacy, consent, retention limits, and the possibility of reputational harm mus
 
 A naive score is:
 
-\[
+$$
 R_k^{\mathrm{naive}}(x)=\sum_i w_iq_i\rho_{ik}.
-\]
+$$
 
 This is useful as an introductory expression, but dangerous when reports share a common source. One rumor copied a thousand times does not become a thousand independent observations.
 
 A more defensible formulation groups reports into inferred provenance clusters \(G_1,\ldots,G_m\):
 
-\[
+$$
 R_k(x)=\frac{\sum_{j=1}^{m}W_j\,A_k(G_j)}{\sum_{j=1}^{m}W_j+\varepsilon},
-\]
+$$
 
 where \(A_k(G_j)\) summarizes the directional contribution of cluster \(j\), \(W_j\) is its quality-adjusted weight, and \(\varepsilon>0\) avoids division by zero. This is a *candidate heuristic*, not a universally unbiased estimator.
 
@@ -161,9 +161,9 @@ Reputational evidence decays, persists, or changes meaning depending on the phen
 
 A candidate temporal factor is:
 
-\[
+$$
 \tau_i(t)=\exp[-\lambda_k(t-t_i)], \qquad t\ge t_i,
-\]
+$$
 
 with direction-specific decay rate \(\lambda_k\). This exponential is only a baseline; some historical facts should not decay automatically.
 
@@ -195,14 +195,14 @@ An important distinction is between **social coordination value** and **epistemi
 
 The proposed learning pathway is:
 
-\[
+$$
 \text{Local Experience}
 \rightarrow \text{Weak Signal Exchange}
 \rightarrow \text{Directional Aggregation}
 \rightarrow \text{Candidate Pattern}
 \rightarrow \text{Validation}
 \rightarrow \text{Structural Knowledge}.
-\]
+$$
 
 This is particularly relevant to a distributed Structural Intelligence ecosystem. A BrainUnit need not transmit an entire internal model to share a useful, qualified observation. A portable signal or hypothesis may be relayed with provenance and localized to the receiving unit's context.
 
@@ -222,9 +222,9 @@ A collective system should retain minority counter-evidence and dissenting conte
 
 Repeated, predictive weak signals may reveal a previously unnamed structural factor. The proposed growth loop is:
 
-\[
+$$
 O_t \rightarrow R_t \rightarrow H_t \rightarrow V_t \rightarrow K_{t+1},
-\]
+$$
 
 where:
 
@@ -258,11 +258,11 @@ Recommended controls include source-lineage audits, adversarial stress tests, ch
 
 The evidence plane asks what the available signals support. The perspective plane asks how they matter under a given viewpoint. The decision plane chooses an action under goals and costs.
 
-\[
+$$
 \underbrace{P(\omega\mid E)}_{\text{evidence-informed belief}}
 \quad\longrightarrow\quad
 \underbrace{\mathbb E[U(a,\omega)\mid E,P,G]}_{\text{subject-dependent action value}}.
-\]
+$$
 
 A weak but credible warning may justify a precautionary action when the downside risk is severe. That does not justify presenting the warning as a confirmed fact.
 

@@ -33,13 +33,13 @@ These questions must not be collapsed into a single universal scalar. The same u
 
 A mathematical metric `d` on a space `X` obeys nonnegativity, identity of indiscernibles, symmetry, and the triangle inequality:
 
-\[
+$$
 d(x,y)\geq 0,\quad d(x,y)=0\Leftrightarrow x=y,
-\]
+$$
 
-\[
+$$
 d(x,y)=d(y,x),\quad d(x,z)\leq d(x,y)+d(y,z).
-\]
+$$
 
 This is a precise object and remains indispensable wherever those axioms fit the task.
 
@@ -47,9 +47,9 @@ This is a precise object and remains indispensable wherever those axioms fit the
 
 For a normalized similarity `s(x,y)` in `[0,1]`, one may **define**:
 
-\[
+$$
 \delta_s(x,y)=1-s(x,y).
-\]
+$$
 
 This transformation is exact as a definition of dissimilarity, not necessarily an approximation. It is **not guaranteed to be a metric**. For example, if `s` lacks the required structure, `delta_s` may violate symmetry or the triangle inequality. Even when it is a valid metric, its *meaning* depends on the original feature space and objective.
 
@@ -57,9 +57,9 @@ This transformation is exact as a definition of dissimilarity, not necessarily a
 
 Let `P` denote an evaluation perspective, `C` context, `E` available evidence, and `K` a knowledge state. We propose:
 
-\[
+$$
 D_P(x,y\mid C,E,K)=F_P\big(M(x,y),O(x,y,C,E),K\big).
-\]
+$$
 
 `M` contains established matched features or metrics; `O` denotes relevant evidence not yet adequately captured by those features. `F_P` may output a vector, an interval, a distribution, or a scalar with a confidence descriptor. Unless additional constraints are imposed, **`D_P` is not asserted to be a mathematical metric**. Perspective dependence need not imply arbitrary subjectivity: perspectives can be explicit, shared, tested, and audited.
 
@@ -67,9 +67,9 @@ D_P(x,y\mid C,E,K)=F_P\big(M(x,y),O(x,y,C,E),K\big).
 
 A separate object is the cost of moving from state `x` to `y`:
 
-\[
-C_{\rightarrow}(x,y\mid a,P,C)=\mathbb E[\operatorname{Cost}(a,x\to y)\mid P,C,E].
-\]
+$$
+C_{\rightarrow}(x,y\mid a,P,C)=\mathbb E[operatorname{Cost}(a,x\to y)\mid P,C,E].
+$$
 
 The reverse transition may have a different cost. Asymmetry here reflects real resources, time, risk, irreversibility, and institutional constraints; it should not be mislabeled as a symmetric metric.
 
@@ -77,9 +77,9 @@ The reverse transition may have a different cost. Asymmetry here reflects real r
 
 Finally, an action value evaluates consequences, not resemblance:
 
-\[
-Q(a\mid b,P,G,C)=\mathbb E_{\omega\sim b}[U(a,\omega\mid P,G,C)]-\lambda\,\operatorname{Risk}(a\mid b).
-\]
+$$
+Q(a\mid b,P,G,C)=\mathbb E_{\omega\sim b}[U(a,\omega\mid P,G,C)]-\lambda\,operatorname{Risk}(a\mid b).
+$$
 
 Here `b` is a belief distribution over relevant states, `G` is a goal specification, and `lambda` is a declared risk parameter. This is a candidate objective, not a universal law of rational behavior. Hard safety constraints may restrict the admissible action set before optimization.
 
@@ -112,9 +112,9 @@ Across domains, exact feature alignment may be absent. Functional analogy, causa
 
 For one object pair, distinct perspectives can yield distinct outputs:
 
-\[
+$$
 \mathbf D(x,y)=[D_{P_1}(x,y),\ldots,D_{P_m}(x,y)].
-\]
+$$
 
 A vector preserves disagreements that a premature scalar average would conceal. It also allows a decision policy to explain which perspective controlled the outcome.
 
@@ -122,17 +122,17 @@ A vector preserves disagreements that a premature scalar average would conceal. 
 
 BM-002 treats OTHERS as an open evidence space; BM-003 proposes **Directional Measurement Sails (DMS)** to evaluate weak evidence along declared directions. A minimal sail response is:
 
-\[
+$$
 R_k(x)=\sum_i w_i q_i g_k(v_i,u_k),
-\]
+$$
 
 where `v_i` encodes an evidence signal, `u_k` a direction, `q_i` a provisional quality estimate, and `w_i` an aggregation weight. This simple expression is only a baseline: correlated reports require dependence-aware handling, and unsupported directions require uncertainty or abstention rather than fabricated certainty.
 
 A richer output is:
 
-\[
+$$
 \mathcal R_k=(r_k^{+},r_k^{-},q_k,u_k,\pi_k),
-\]
+$$
 
 with positive support, counter-support, quality, uncertainty, and provenance reference. The symbols are descriptive fields, not necessarily commensurate numbers. In particular, `u_k` here denotes uncertainty, distinct from the direction vector `u_k` used in the baseline equation; an implementation should use unambiguous field names such as `uncertainty_k` and `axis_k`.
 
@@ -189,17 +189,17 @@ The user-originated insight motivating this paper is that survival and competiti
 
 Consider a binary threat `T` with belief `p = Pr(T|E)`. Suppose fleeing costs `c` regardless of threat and staying incurs loss `L` only if the threat is real. Then:
 
-\[
+$$
 \mathbb E[\mathrm{Loss}(\mathrm{flee})]=c,
 \qquad
 \mathbb E[\mathrm{Loss}(\mathrm{stay})]=pL.
-\]
+$$
 
 Fleeing minimizes expected loss when:
 
-\[
+$$
 p>\frac{c}{L}.
-\]
+$$
 
 If `c=2` and `L=100`, the threshold is `0.02`: even a low threat probability can rationally justify flight. The belief remains `p`; **the action threshold changes because the stakes differ**.
 
@@ -209,10 +209,10 @@ This distinction prevents a competitive system from learning that exaggeration i
 
 A decision agent may face competitors whose actions alter the environment. Let `a` be the agent's action and `a_{-i}` the actions of others. A simple competitive objective is:
 
-\[
+$$
 a_i^*\in\arg\max_{a_i\in\mathcal A_i^{\mathrm{safe}}}
 \mathbb E[U_i(a_i,a_{-i},\omega)\mid E,P_i,C].
-\]
+$$
 
 This expression highlights several additional factors:
 
@@ -245,9 +245,9 @@ The weak reports do not become proven failures merely because they are included.
 
 Assume a decision maker estimates the probability of a costly delay as `0.15` for A and `0.06` for B, based on a separately specified evidence model. Delay loss is `100` utility units. A offers `5` utility units of price/technical advantage relative to B. Ignoring other costs:
 
-\[
+$$
 \text{A's relative expected advantage}=5-(0.15-0.06)\times100=-4.
-\]
+$$
 
 B is preferred under these assumptions. If the delay loss were only `20`, A's relative advantage would instead be `5-1.8=3.2`. **The evidence estimates can remain unchanged while the chosen action reverses.** These numbers are hypothetical and do not validate the architecture.
 
@@ -274,12 +274,12 @@ SI's Metric Differential Tree (MDT), CCC, Principle Intelligence, and Open Struc
 
 Proposed growth loop:
 
-\[
+$$
 O_t\rightarrow\text{directional hypothesis}
 \rightarrow\text{test and counter-test}
 \rightarrow\text{validated feature / CCC / Principle}
 \rightarrow K_{t+1}.
-\]
+$$
 
 Residual unexplained evidence remains in `O_{t+1}`. Promotion must depend on validation, not merely repeated high scores. BM-006 develops this loop in detail.
 
