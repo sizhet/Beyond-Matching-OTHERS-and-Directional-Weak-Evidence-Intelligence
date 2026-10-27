@@ -1,0 +1,8 @@
+Beyond Matching: OTHERS, Directional Weak-Evidence Intelligence, and Metric Directional Intuition (BM-ODWEI v1.1.0)
+
+This theory-first research release extends BM-ODWEI with Metric Directional Intuition (MDI), a perspective-conditioned framework for evaluating directional evidence beyond conventional feature matching. Six new research papers examine Euclidean cosine-based scoring and metric-native goal-distance differences; directional fields as pre-decisional guidance for attention and candidate generation; OTHERS-only residual evidence allocation and optional integration with metric evaluation (MET); lightweight, budget-aware hypothesis testing and reputational evidence updates; and provenance-preserving evidence relay, falsifiable validation, and structural growth. The extension distinguishes directional utility from directional agreement, normalized distance scores from mathematical metrics, and formal mathematical properties from unvalidated engineering and biomimetic hypotheses. It provides open questions, testable hypotheses, and a staged validation roadmap, while preserving the original BM-001–008 papers and v1.0.0 release. This release proposes research architectures and candidate operators; it does not claim completed empirical validation or demonstrated biological mechanisms.
+
+Repository: https://github.com/sizhet/Beyond-Matching-OTHERS-and-Directional-Weak-Evidence-Intelligence
+MDI extension: https://github.com/sizhet/Beyond-Matching-OTHERS-and-Directional-Weak-Evidence-Intelligence/tree/main/extensions/metric-directional-intuition
+
+Version: v1.1.0 (planned release; verify published version and DOI before posting).
