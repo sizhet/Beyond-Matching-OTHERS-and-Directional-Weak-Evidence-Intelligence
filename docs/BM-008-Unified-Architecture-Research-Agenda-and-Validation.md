@@ -14,10 +14,6 @@ An intelligent evaluator cannot assume that all consequential evidence has alrea
 
 ---
 
-![Fig-007-Unified-Open-Scoring-Architecture.png](../figures/Fig-007-Unified-Open-Scoring-Architecture.png)
-
----
-
 ## 1. The Research Problem and Its Boundaries
 
 Many scoring systems start with a representation and then compute similarity, distance, or ranking. This is effective when the representation contains the variables relevant to the task. The problem arises when consequential signals remain outside the current schema: the model may be numerically precise about the *wrong set of variables*. This is a hypothesis about a failure mode, not a claim that AI is generally inferior to human cross-domain reasoning.
@@ -103,7 +99,11 @@ The reference architecture comprises seven connected subsystems:
   Governance, counter-evidence, and audit span every subsystem.
 ```
 
-**Figure placement:** Insert `../figures/Fig-007-Unified-Open-Scoring-Architecture.png` immediately after this architecture. See also Fig-001 for the grand map and Fig-006 for the three-plane separation.
+![Fig-007-Unified-Open-Scoring-Architecture.png](../figures/Fig-007-Unified-Open-Scoring-Architecture.png)
+
+*Fig-007. Unified open-scoring reference architecture connecting evidence ingestion, directional evaluation, perspective, governed action, validation, and structural growth.*
+
+---
 
 ### 3.1 Contracts between subsystems
 
@@ -441,4 +441,4 @@ The following are orientation references, not an exhaustive or systematically ve
 - **Primary illustration:** `figures/Fig-007-Unified-Open-Scoring-Architecture.png` after Section 3.
 - **Cross-references:** BM-001–BM-007; `FIGURE-INDEX.md`; `FUTURE-DIRECTIONS.md`.
 - **Release status:** v1.0.0 foundational research proposal; no implementation or benchmark results implied.
-- **License:** Follow repository-level `LICENSE` (planned Apache-2.0).
+- **License:** Follow repository-level `LICENSE` (Apache-2.0).

@@ -15,10 +15,6 @@ We propose **Open Structural Scoring Growth (OSSG)**: a governed learning cycle 
 
 ---
 
-![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
-
----
-
 ## 1. The Problem: A Scoring System Cannot Predefine Everything That Matters
 
 A conventional scoring pipeline commonly assumes:
@@ -84,7 +80,11 @@ $$
 
 Here \(R_t\) denotes direction-conditioned responses, \(H_t\) candidate hypotheses, and \(K_{t+1}\) the revised explicit structural store. The arrows are *process stages*, not guaranteed transformations: a stage may abstain, reject a candidate, or return it for further evidence collection.
 
-**Figure placement:** Insert `../figures/Fig-005-OTHERS-Structural-Growth-Loop.png` immediately after this section's introductory explanation when the figure becomes available.
+![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
+
+*Fig-005. OTHERS-to-structure loop: provisional directional effects are challenged and validated before promotion into explicit features, metrics, CCCs, or principles.*
+
+---
 
 ### 3.1 Six operational stages
 
@@ -394,6 +394,4 @@ The most important separation is between **noticing a signal**, **establishing a
 - **Series:** Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence.
 - **Previous paper:** `BM-005-Perspective-Distance-and-Competitive-Action-Scoring.md`.
 - **Next paper:** `BM-007-Counter-Evidence-Provenance-and-Scoring-Governance.md`.
-- **Primary figure:** `figures/Fig-005-OTHERS-Structural-Growth-Loop.png`.
-- **Suggested related figure:** `figures/Fig-007-Unified-Open-Scoring-Architecture.png` (in the later synthesis paper).
-- **License:** See repository `LICENSE` (planned Apache-2.0).
+- **License:** See repository `LICENSE` (Apache-2.0).

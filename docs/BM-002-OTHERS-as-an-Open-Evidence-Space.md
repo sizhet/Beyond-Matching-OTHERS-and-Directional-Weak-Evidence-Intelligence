@@ -96,6 +96,12 @@ $$
 
 with the second class representing references to subjective interpretation rather than a license to overwrite factual evidence. The union need not be disjoint.
 
+![Fig-001-Beyond-Matching-Grand-Map.png](../figures/Fig-001-Beyond-Matching-Grand-Map.png)
+
+*Fig-001. Beyond Matching grand map: formal features and residual evidence feed directional assessment, structural learning, and governed choice. Conceptual architecture.*
+
+---
+
 ## 4. An Evidence Unit: The Minimal Contract
 
 To move from metaphor to engineering, each admitted residual signal should carry a minimal record. A proposed **OTHERS Evidence Unit (OEU)** contains:
@@ -191,6 +197,12 @@ where $\mathcal F_t$ is feedback and $\mathcal V_t$ is the validation process. $
 ### 7.1 A negative result is still useful
 
 If a signal repeatedly fails validation, that outcome should be recorded as counter-evidence, not silently deleted. A failed candidate can prevent rediscovery of the same spurious correlation and improve governance of later scoring proposals.
+
+![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
+
+*Fig-005. OTHERS-to-structure loop: provisional directional effects are challenged and validated before promotion into explicit features, metrics, CCCs, or principles.*
+
+---
 
 ## 8. Reputational Evidence and Collective Learning
 

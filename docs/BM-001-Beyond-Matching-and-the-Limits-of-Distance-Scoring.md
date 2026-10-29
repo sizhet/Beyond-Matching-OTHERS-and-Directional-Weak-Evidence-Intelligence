@@ -88,6 +88,12 @@ $$
 
 without being mathematically defective. The asymmetry can reflect different costs, constraints, or consequences. We should therefore use precise names—*metric distance*, *dissimilarity*, *perspective score*, or *action cost*—instead of calling every scalar comparison a distance.
 
+![Fig-002-Matching-vs-Perspective-Distance.png](../figures/Fig-002-Matching-vs-Perspective-Distance.png)
+
+*Fig-002. Matching-based similarity is distinct from perspective-dependent assessment and action cost; the latter need not satisfy metric axioms.*
+
+---
+
 ## 4. OTHERS: An Explicit Open Evidence Interface
 
 We propose **OTHERS** as a name for evidence that may matter to a judgment but is not adequately captured by the current aligned-feature scoring model.

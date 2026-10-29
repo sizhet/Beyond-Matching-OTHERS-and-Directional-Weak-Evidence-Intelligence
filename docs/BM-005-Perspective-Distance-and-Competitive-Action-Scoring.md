@@ -183,6 +183,12 @@ ActionAssessment:
 
 The schema deliberately separates **who owns the objective** from **what the evidence says**.
 
+![Fig-006-Evidence-Perspective-Decision-Planes.png](../figures/Fig-006-Evidence-Perspective-Decision-Planes.png)
+
+*Fig-006. Evidence, perspective, and decision planes retain distinct responsibilities; authorization and counter-evidence apply across their interfaces.*
+
+---
+
 ## 6. Competitive Scoring Is Not a Truth Metric
 
 The user-originated insight motivating this paper is that survival and competition change the importance of different signals. This is correct as a statement about **decision consequences**: the loss from a missed threat can dwarf the cost of a false alarm. It does not imply that the probability of a threat should be artificially increased to motivate caution.

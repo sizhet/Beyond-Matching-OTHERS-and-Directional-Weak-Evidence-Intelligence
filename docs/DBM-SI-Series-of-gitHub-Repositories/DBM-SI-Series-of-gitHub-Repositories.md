@@ -288,3 +288,7 @@
 81. Chess as a Strategic Structural Intelligence Laboratory (Chess-SSIL) \
     From Competitive UIRTU-Relay to Autonomous Strategy Evolution and Collective Learning \
     Repository: https://github.com/sizhet/Chess-Strategic-Structural-Intelligence-Laboratory
+
+82. Autonomous Questioning Structural Intelligence (AQSI) - \
+    Question Discovery, Multi-Granularity Influence Scoring, Structural Relay, and Research Governance \
+    Repository: https://github.com/sizhet/Autonomous-Questioning-Structural-Intelligence

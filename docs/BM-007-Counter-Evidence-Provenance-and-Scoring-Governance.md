@@ -84,6 +84,12 @@ $$
 
 The last equation is a **decision proposal**, not a license to execute. Execution may require a separate authorization event. If the evidence is insufficient, abstention or escalation is an acceptable output.
 
+![Fig-006-Evidence-Perspective-Decision-Planes.png](../figures/Fig-006-Evidence-Perspective-Decision-Planes.png)
+
+*Fig-006. Evidence, perspective, and decision planes retain distinct responsibilities; authorization and counter-evidence apply across their interfaces.*
+
+---
+
 ## 4. Provenance-Aware Evidence Units
 
 Every incoming OTHERS signal should carry an explicit contract rather than only a natural-language assertion or scalar weight.
@@ -445,4 +451,4 @@ This paper proposes a **governed open-scoring architecture** in which observatio
 - **Next paper:** `BM-008-Unified-Architecture-Research-Agenda-and-Validation.md`.
 - **Primary figure:** `figures/Fig-006-Evidence-Perspective-Decision-Planes.png` (recommended after Section 3).
 - **Related figures:** `figures/Fig-004-Reputational-Collective-Signals.png` and `figures/Fig-005-OTHERS-Structural-Growth-Loop.png`.
-- **License:** See repository `LICENSE` (planned Apache-2.0).
+- **License:** See repository `LICENSE` (Apache-2.0).

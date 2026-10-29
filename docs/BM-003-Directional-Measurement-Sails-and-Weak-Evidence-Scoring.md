@@ -14,10 +14,6 @@ Conventional similarity and distance scoring operate primarily on features that 
 
 ---
 
-![Fig-003-Directional-Measurement-Sails.png](../figures/Fig-003-Directional-Measurement-Sails.png)
-
----
-
 ## 1. Problem: useful evidence before formal matching
 
 A feature-based matcher asks whether two objects agree on a predefined representation. An open-world evaluator must sometimes act before that representation is complete. A company may exhibit a pattern of troubling employee departures before any single measurable financial indicator deteriorates; an animal may respond to the sudden flight of nearby animals without identifying the underlying threat. In both examples, a weak signal can matter without proving its interpretation.
@@ -50,7 +46,11 @@ The original intuition is to place a measurement sail along a direction of inter
 
 Unlike a literal particle, a signal has no required physical direction. Its *directional representation* is model-dependent and must be learned, specified, or calibrated. A sail may yield positive, negative, or near-zero response; it may also abstain.
 
-**Figure placement:** `../figures/Fig-003-Directional-Measurement-Sails.png` immediately after this section. Suggested caption: *Heterogeneous evidence impinges on multiple direction-specific response functions; readings preserve support, opposition, reliability, and uncertainty rather than collapsing every signal into one global reputation score.*
+![Fig-003-Directional-Measurement-Sails.png](../figures/Fig-003-Directional-Measurement-Sails.png)
+
+*Fig-003. Directional measurement sails aggregate heterogeneous signals across several evaluation directions while preserving reliability and uncertainty.*
+
+---
 
 ## 4. Formal objects and notation
 

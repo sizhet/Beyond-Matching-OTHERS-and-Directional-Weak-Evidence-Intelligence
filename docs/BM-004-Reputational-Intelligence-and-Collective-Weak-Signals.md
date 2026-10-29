@@ -14,10 +14,6 @@ A substantial share of useful judgment is mediated by signals that do not consti
 
 ---
 
-![Fig-004-Reputational-Collective-Signals.png](../figures/Fig-004-Reputational-Collective-Signals.png)
-
----
-
 ## 1. The Problem: Collective Judgment Before Formal Matching
 
 Classical similarity scoring presumes that relevant features can be extracted, aligned, and compared. In real environments, decision makers frequently encounter assessments such as:
@@ -154,6 +150,13 @@ More rigorous implementations may use explicit dependence graphs, hierarchical B
 - **Evidential support:** How strongly do the underlying observations support the claim?
 
 These quantities are correlated in some settings but never interchangeable by definition.
+
+
+![Fig-004-Reputational-Collective-Signals.png](../figures/Fig-004-Reputational-Collective-Signals.png)
+
+*Fig-004. Collective weak-signal transmission: repeated messages are not necessarily independent evidence, and provenance constrains aggregation.*
+
+---
 
 ## 7. Temporal Dynamics and Context Transfer
 
