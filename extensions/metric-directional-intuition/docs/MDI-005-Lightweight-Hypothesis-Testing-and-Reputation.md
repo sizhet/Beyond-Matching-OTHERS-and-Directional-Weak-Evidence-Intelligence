@@ -13,6 +13,20 @@
 
 This paper proposes **Lightweight Hypothesis-Guided Directional Intelligence (LHDI)** as a candidate mechanism connecting perspective-conditioned directional scoring with reputational weak-evidence learning. A system operating under limited time, observations, and computation constructs a small hypothesis portfolio; scores candidate tests by expected decision improvement relative to cost; updates beliefs and source reliabilities; and either acts, abstains, requests more evidence, or relays a bounded, auditable evidence object. The design distinguishes the probability that a hypothesis is true from the reliability of a source, the confidence of a score, and the utility of an action. It also separates a metric-native *potential-derived* directional score from a general learned pairwise relation, and makes OTHERS evidence accounting explicit. We give a minimal contract, mathematical examples, governance invariants, counterexamples, and a falsifiable validation program. No empirical performance or biological correspondence is asserted.
 
+---
+
+![Fig-010-Perspective-Fields-and-Forward-Guidance.png](figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
+
+**Figure 010. Perspective Fields and Pre-Decisional Guidance.** Schematic perspective-conditioned landscape with multiple exploration trails. Directional information can prioritize attention and candidate generation before explicit evaluation, subject to task, risk, and governance constraints. The landscape is illustrative and does not require a Euclidean state representation.
+
+---
+
+![Fig-011-Hypothesis-Reputation-Relay-Loop.png](figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
+
+**Figure 011. Hypothesis–Reputation–Relay Loop.** A proposed low-budget cycle in which directional hypotheses guide targeted evidence gathering, evaluation updates context-specific reliability, and provenance-preserving relay supports further testing. Promotion of OTHERS evidence into established matching features requires independent validation and governance rather than mere repetition.
+
+---
+
 ## 1. Motivation and research question
 
 BM-ODWEI distinguishes ordinary feature matching from **OTHERS**: evidence that is potentially informative but not yet captured by established matching features. MDI-002 develops direction-sensitive operators; MDI-003 explores pre-decisional guidance; and MDI-004 specifies residual scoring and integration into MET. A missing piece is **how to decide which weak signals deserve examination** when the candidate space is large and observation budgets are small.

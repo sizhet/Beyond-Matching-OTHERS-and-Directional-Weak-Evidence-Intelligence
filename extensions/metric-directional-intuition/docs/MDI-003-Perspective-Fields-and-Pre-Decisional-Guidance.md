@@ -10,6 +10,14 @@
 
 Directional evidence need not wait until a fully specified action or decision is available. An agent may use a perspective-conditioned field to orient attention, propose candidate transitions, select low-cost probes, and prioritize evaluation *before* explicit choice. This paper develops **pre-decisional directional guidance** as an architectural extension of BM-ODWEI's Directional Measurement Sails and MDI-002's representation-agnostic scoring operators. We distinguish Euclidean vector fields, metric-native transition potentials, and general directed relations; define interfaces for proposal, screening, and final evaluation; and examine multi-perspective conflict, risk, uncertainty, temporal adaptation, evidence provenance, and computational budgets. We connect the resulting guidance loop to Structural Intelligence (SI), UIERU forward guidance, and relay without assuming that all directional representations are Euclidean or that any proposed operator is a proven biological mechanism. The paper concludes with conformance criteria and experiments designed to distinguish genuine improvement in candidate discovery from mere re-ranking or evaluation leakage.
 
+---
+
+![Fig-010-Perspective-Fields-and-Forward-Guidance.png](figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
+
+**Figure 010. Perspective Fields and Pre-Decisional Guidance.** Schematic perspective-conditioned landscape with multiple exploration trails. Directional information can prioritize attention and candidate generation before explicit evaluation, subject to task, risk, and governance constraints. The landscape is illustrative and does not require a Euclidean state representation.
+
+---
+
 ## 1. Motivation: Direction Before Choice
 
 Conventional pipelines often appear to follow `observe → enumerate actions → score actions → choose`. This is an adequate abstraction in small, known action spaces but becomes expensive or incomplete when the relevant candidates are not yet known. A perspective may already supply useful orientation: toward shelter, away from a hazard, along a stable path, toward an unresolved evidence source, or toward a promising structural modification. Such orientation can shape *which candidates are generated*, not merely how a fixed candidate list is ranked.

@@ -11,7 +11,15 @@ Conventional structural similarity systems primarily assess what can be aligned,
 
 ---
 
-![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](../figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
+![Fig-008-Directional-Intuition-Grand-Map.png](../figures/Fig-008-Directional-Intuition-Grand-Map.png)
+
+**Figure 008. Directional Intuition — Grand Map.** Conceptual integration of matching evidence, the OTHERS open-evidence space, perspective-conditioned directional scoring, pre-decisional guidance, hypothesis testing, reputational evaluation, MET integration, and evidence-driven structural growth. Arrows indicate proposed information and control relationships rather than proven causal or neural mechanisms.
+
+---
+
+![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
+
+**Figure 009. Euclidean vs. Metric-Native Directional Scoring.** The Euclidean route evaluates alignment through normalized vector projections; the metric-native route evaluates progress toward a goal set using changes in a distance-to-goal potential. The latter does not require a Euclidean embedding, provided the metric and goal set satisfy the stated assumptions.
 
 ---
 
