@@ -27,6 +27,8 @@ This index documents the four proposed extension figures, their scientific inter
 **Primary placement:** `docs/MDI-001-Problem-Definition-and-Research-Boundaries.md`, immediately after its first integrated problem formulation or architecture overview, before detailed mathematical definitions.  
 **Secondary reference:** MDI-006's synthesis of validation, relay, and structural growth.
 
+![Fig-008-Directional-Intuition-Grand-Map.png](figures/Fig-008-Directional-Intuition-Grand-Map.png)
+
 **Suggested caption:**
 
 > **Figure 008. Directional Intuition — Grand Map.** Conceptual integration of matching evidence, the OTHERS open-evidence space, perspective-conditioned directional scoring, pre-decisional guidance, hypothesis testing, reputational evaluation, MET integration, and evidence-driven structural growth. Arrows indicate proposed information and control relationships rather than proven causal or neural mechanisms.
@@ -40,6 +42,8 @@ This index documents the four proposed extension figures, their scientific inter
 **File:** `figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png`  
 **Primary placement:** `docs/MDI-002-Euclidean-and-Metric-Native-Directional-Scoring.md`, after both scoring routes have been defined and before their comparison and mathematical properties.  
 **Secondary reference:** MDI-001's representation-independent research boundary.
+
+![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
 
 **Suggested caption:**
 
@@ -69,6 +73,8 @@ The metric-native bound follows from the 1-Lipschitz property of distance to a n
 **Primary placement:** `docs/MDI-003-Perspective-Fields-and-Pre-Decisional-Guidance.md`, following the discussion of guidance preceding explicit candidate evaluation.  
 **Secondary reference:** MDI-005's limited-budget hypothesis and evidence selection.
 
+![Fig-010-Perspective-Fields-and-Forward-Guidance.png](figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
+
 **Suggested caption:**
 
 > **Figure 010. Perspective Fields and Pre-Decisional Guidance.** Schematic perspective-conditioned landscape with multiple exploration trails. Directional information can prioritize attention and candidate generation before explicit evaluation, subject to task, risk, and governance constraints. The landscape is illustrative and does not require a Euclidean state representation.
@@ -82,6 +88,8 @@ The metric-native bound follows from the 1-Lipschitz property of distance to a n
 **File:** `figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png`  
 **Primary placement:** `docs/MDI-005-Lightweight-Hypothesis-Testing-and-Reputation.md`, after the hypothesis-testing and reputation-update loop has been introduced.  
 **Secondary placement:** `docs/MDI-006-Evidence-Relay-Validation-and-Structural-Growth.md`, where relay, independent validation, and feature promotion are integrated.
+
+![Fig-011-Hypothesis-Reputation-Relay-Loop.png](figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
 
 **Suggested caption:**
 

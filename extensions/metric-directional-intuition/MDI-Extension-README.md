@@ -101,7 +101,7 @@ Read sequentially for the complete argument, or select a paper by concern:
 
 ## 5. Figures
 
-The extension's planned figure identifiers and insertion points are:
+The extension's figure identifiers and insertion points are:
 
 | Figure | Planned filename | Primary paper |
 | --- | --- | --- |
@@ -146,14 +146,12 @@ Conceptual interfaces are proposed with **MET** (metric/distance evaluation), **
 
 ## 9. Companion Files and Publication Policy
 
-The following extension-local navigation and research files are planned:
-
-- `CONTENTS.md` — detailed paper and section map.
-- `GLOSSARY.md` — scoped MDI terminology and symbol conventions.
-- `FIGURE-INDEX.md` — figure descriptions and insertion guidance.
-- `OPEN-QUESTIONS.md` — unresolved mathematical, engineering, and cognitive questions.
-- `TESTABLE-HYPOTHESES.md` — falsifiable hypotheses and control conditions.
-- `VALIDATION-ROADMAP.md` — staged experiments, acceptance criteria, and failure reporting.
+- `MDI-Extension-CONTENTS.md` — detailed paper and section map.
+- `MDI-Extension-GLOSSARY.md` — scoped MDI terminology and symbol conventions.
+- `MDI-Extension-FIGURE-INDEX.md` — figure descriptions and insertion guidance.
+- `MDI-Extension-OPEN-QUESTIONS.md` — unresolved mathematical, engineering, and cognitive questions.
+- `MDI-Extension-TESTABLE-HYPOTHESES.md` — falsifiable hypotheses and control conditions.
+- `MDI-Extension-VALIDATION-ROADMAP.md` — staged experiments, acceptance criteria, and failure reporting.
 
 These companion files should be added as they are completed; their mention here does not imply they have already been committed. The extension is **theory-first** and does not require demonstration code for its initial research release.
 

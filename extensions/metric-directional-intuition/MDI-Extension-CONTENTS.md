@@ -8,7 +8,7 @@
 ## 1. Start Here
 
 - [README.md](README.md) — scope, research thesis, core definitions, architecture, integration boundaries, and recommended reading.
-- **This CONTENTS.md** — navigational map of the six MDI papers, figures, and planned research companions.
+- **This CONTENTS.md** — navigational map of the six MDI papers, figures, and research companions.
 
 ### Suggested reading paths
 
@@ -102,17 +102,17 @@ All paths below are **target paths** for separately exported images in `figures/
 
 Figure numbering continues the parent repository's Fig-001–007 sequence; no original parent figure needs to be changed.
 
-## 4. Research Companion Documents (Planned)
+## 4. Research Companion Documents
 
-These extension-local files belong beside this CONTENTS file. **They are planned deliverables, not claims of already committed files.**
+These extension-local files belong beside this CONTENTS file.
 
 | File | Intended purpose |
 | --- | --- |
-| `GLOSSARY.md` | Definitions, mathematical symbols, and semantic distinctions specific to MDI |
-| `FIGURE-INDEX.md` | Figure descriptions, insertion points, and asset-verification notes |
-| `OPEN-QUESTIONS.md` | Mathematical, algorithmic, engineering, and biomimetic unknowns |
-| `TESTABLE-HYPOTHESES.md` | Falsifiable claims, null hypotheses, controls, and measurements |
-| `VALIDATION-ROADMAP.md` | Staged conformance, simulation, empirical evaluation, and promotion criteria |
+| `MDI-Extension-GLOSSARY.md` | Definitions, mathematical symbols, and semantic distinctions specific to MDI |
+| `MDI-Extension-FIGURE-INDEX.md` | Figure descriptions, insertion points, and asset-verification notes |
+| `MDI-Extension-OPEN-QUESTIONS.md` | Mathematical, algorithmic, engineering, and biomimetic unknowns |
+| `MDI-Extension-TESTABLE-HYPOTHESES.md` | Falsifiable claims, null hypotheses, controls, and measurements |
+| `MDI-Extension-VALIDATION-ROADMAP.md` | Staged conformance, simulation, empirical evaluation, and promotion criteria |
 
 ## 5. Cross-Paper Dependency Map
 
