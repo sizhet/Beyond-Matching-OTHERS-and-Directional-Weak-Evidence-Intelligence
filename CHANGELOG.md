@@ -13,6 +13,8 @@ This project follows the principles of [Keep a Changelog](https://keepachangelog
 - Specify executable interfaces for OTHERS Evidence Units, candidate structural contracts, and governance records.
 - Investigate adaptive sail discovery and promotion of validated signals into explicit structural features.
 
+---
+
 ## [1.1.0] - 2026-10-29
 
 ### Added
@@ -35,6 +37,7 @@ This project follows the principles of [Keep a Changelog](https://keepachangelog
 | Fig-010 | `figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png` | MDI-003: directional fields and the guide/generate/evaluate workflow |
 | Fig-011 | `figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png` | MDI-005 and MDI-006: evidence testing, reputation, relay, and feature promotion |
 
+---
 
 ## [1.0.0] - 2026-10-16
 

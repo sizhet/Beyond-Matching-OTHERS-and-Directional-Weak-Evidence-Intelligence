@@ -8,9 +8,8 @@
 **Status:** Conceptual and algorithmic proposals; empirical claims remain to be validated.
 
 ---
----
 
-## [v1.1.0 extentions to v1.0.0]
+# v1.1.0 Extentions to v1.0.0
 
 ### Metric-Directional Intuition (MDI)
 
@@ -20,6 +19,9 @@
 
 ---
 ---
+
+# v1.0.0 Contents
+
 
 ![Fig-001-Beyond-Matching-Grand-Map.png](figures/Fig-001-Beyond-Matching-Grand-Map.png)
 

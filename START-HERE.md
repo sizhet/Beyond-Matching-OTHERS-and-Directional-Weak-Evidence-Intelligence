@@ -9,9 +9,8 @@
 > **Central question:** How can an intelligent system evaluate consequential signals that its current feature-matching representation cannot yet formally express?
 
 ---
----
 
-## v1.1.0 extentions to v1.0.0 
+# v1.1.0 Extentions to v1.0.0
 
 ### Metric-Directional Intuition (MDI)
 
@@ -21,6 +20,8 @@
 
 ---
 ---
+
+# v1.0.0 Contents
 
 ## 1. The Project in One Minute
 

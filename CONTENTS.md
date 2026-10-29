@@ -9,9 +9,8 @@
 > **Research question:** How can intelligence evaluate consequential signals that cannot yet be formally matched, while preserving evidence quality, perspective boundaries, and accountable choice?
 
 ---
----
 
-## v1.1.0 extentions to v1.0.0 
+# v1.1.0 Extentions to v1.0.0
 
 ### Metric-Directional Intuition (MDI)
 
@@ -21,6 +20,9 @@
 
 ---
 ---
+
+# v1.0.0 Contents
+
 
 ## 1. Quick Navigation
 
