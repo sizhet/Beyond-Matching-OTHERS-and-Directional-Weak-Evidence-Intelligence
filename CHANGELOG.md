@@ -2,7 +2,7 @@
 
 All notable changes to **Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence** are documented here.
 
-This project follows the principles of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and intends to use [Semantic Versioning](https://semver.org/). The v1.0.0 release is a **conceptual and research-architecture release**, not an experimentally validated software implementation.
+This project follows the principles of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and intends to use [Semantic Versioning](https://semver.org/). The v1.1.0 release is a **conceptual and research-architecture release**, not an experimentally validated software implementation.
 
 ## [Unreleased]
 
@@ -12,6 +12,29 @@ This project follows the principles of [Keep a Changelog](https://keepachangelog
 - Test calibration, abstention, robustness to manipulation, and cross-domain generalization.
 - Specify executable interfaces for OTHERS Evidence Units, candidate structural contracts, and governance records.
 - Investigate adaptive sail discovery and promotion of validated signals into explicit structural features.
+
+## [1.1.0] - 2026-10-29
+
+### Added
+
+###Metric-Directional Intuition (MDI)
+
+**A research extension of Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence (BM-ODWEI)**
+
+- `extensions/metric-directional-intuition/docs/MDI-001-Problem-Definition-and-Research-Boundaries.md` — Establish the problem, terminology, mathematical routes, and non-claims.
+- `extensions/metric-directional-intuition/docsMDI-002-Euclidean-and-Metric-Native-Directional-Scoring.md` — Mathematical foundation and operator comparison.
+- `extensions/metric-directional-intuition/docs/MDI-003-Perspective-Fields-and-Pre-Decisional-Guidance.md` — Move from post-hoc scoring to candidate discovery and forward guidance.
+- `extensions/metric-directional-intuition/docs/MDI-004-OTHERS-Residual-Scoring-and-MET-Integration.md` — Safe fusion of weak directional evidence with existing matching evaluators.
+- `extensions/metric-directional-intuition/docs/MDI-005-Lightweight-Hypothesis-Testing-and-Reputation.md` — Study limited-budget directional hypotheses and evidence-based trust.
+- `extensions/metric-directional-intuition/docs/MDI-006-Evidence-Relay-Validation-and-Structural-Growth.md` — Integrate the series into a falsifiable, traceable structural-growth program.
+
+| Figure | Intended asset | Primary use |
+| --- | --- | --- |
+| Fig-008 | `figures/Fig-008-Directional-Intuition-Grand-Map.png` | MDI-001: overview of matching, OTHERS, guidance, evidence, and growth |
+| Fig-009 | `figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png` | MDI-002: vector alignment versus metric-native goal-distance change |
+| Fig-010 | `figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png` | MDI-003: directional fields and the guide/generate/evaluate workflow |
+| Fig-011 | `figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png` | MDI-005 and MDI-006: evidence testing, reputation, relay, and feature promotion |
+
 
 ## [1.0.0] - 2026-10-16
 
@@ -44,8 +67,6 @@ This project follows the principles of [Keep a Changelog](https://keepachangelog
 - `Fig-005-OTHERS-Structural-Growth-Loop.png`
 - `Fig-006-Evidence-Perspective-Decision-Planes.png`
 - `Fig-007-Unified-Open-Scoring-Architecture.png`
-
-**Figure packaging note:** The seven concepts were initially rendered as one composite image. Individual PNG exports and link checks remain release-preparation tasks; the entries above describe the intended figure set, not independently verified files.
 
 ### Research positioning
 - Distinguished **formal matching**, **perspective-dependent assessment**, and **goal-dependent action choice**.

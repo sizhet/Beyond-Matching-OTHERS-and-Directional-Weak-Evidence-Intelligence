@@ -2,11 +2,25 @@
 
 **Project:** Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence  
 **Authors:** Sizhe Tan & GPT-Obot  
-**Release:** v1.0.0 — Research foundation  
+**Release:** v1.1.0 — Research foundation  
 **License:** Apache-2.0  
 **Status:** Conceptual framework and proposed algorithms; experimental benefits have not yet been established.
 
 > **Central question:** How can an intelligent system evaluate consequential signals that its current feature-matching representation cannot yet formally express?
+
+---
+---
+
+## v1.1.0 extentions to v1.0.0 
+
+### Metric-Directional Intuition (MDI)
+
+**A research extension of Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence (BM-ODWEI)**
+
+[v1.1.0 metric-directional-intuition](extensions/metric-directional-intuition)
+
+---
+---
 
 ## 1. The Project in One Minute
 

@@ -3,10 +3,22 @@
 **An open research framework for evaluating what cannot yet be formally matched.**
 
 **Authors:** Sizhe Tan & GPT-Obot  
-**Version:** v1.0.0 (research foundation)  
+**Version:** v1.1.0 (research foundation)  
 **License:** Apache-2.0  
 **Status:** Conceptual and algorithmic proposals; empirical claims remain to be validated.
 
+---
+---
+
+## [v1.1.0 extentions to v1.0.0]
+
+### Metric-Directional Intuition (MDI)
+
+**A research extension of Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence (BM-ODWEI)**
+
+[v1.1.0 metric-directional-intuition](extensions/metric-directional-intuition)
+
+---
 ---
 
 ![Fig-001-Beyond-Matching-Grand-Map.png](figures/Fig-001-Beyond-Matching-Grand-Map.png)
