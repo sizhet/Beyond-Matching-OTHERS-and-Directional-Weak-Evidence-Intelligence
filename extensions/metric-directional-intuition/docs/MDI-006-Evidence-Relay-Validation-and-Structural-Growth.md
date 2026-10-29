@@ -14,13 +14,13 @@ Directional scoring becomes scientifically and operationally useful only when it
 
 ---
 
-![Fig-008-Directional-Intuition-Grand-Map.png](figures/Fig-008-Directional-Intuition-Grand-Map.png)
+![Fig-008-Directional-Intuition-Grand-Map.png](../figures/Fig-008-Directional-Intuition-Grand-Map.png)
 
 **Figure 008. Directional Intuition — Grand Map.** Conceptual integration of matching evidence, the OTHERS open-evidence space, perspective-conditioned directional scoring, pre-decisional guidance, hypothesis testing, reputational evaluation, MET integration, and evidence-driven structural growth. Arrows indicate proposed information and control relationships rather than proven causal or neural mechanisms.
 
 ---
 
-![Fig-011-Hypothesis-Reputation-Relay-Loop.png](figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
+![Fig-011-Hypothesis-Reputation-Relay-Loop.png](../figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
 
 **Figure 011. Hypothesis–Reputation–Relay Loop.** A proposed low-budget cycle in which directional hypotheses guide targeted evidence gathering, evaluation updates context-specific reliability, and provenance-preserving relay supports further testing. Promotion of OTHERS evidence into established matching features requires independent validation and governance rather than mere repetition.
 

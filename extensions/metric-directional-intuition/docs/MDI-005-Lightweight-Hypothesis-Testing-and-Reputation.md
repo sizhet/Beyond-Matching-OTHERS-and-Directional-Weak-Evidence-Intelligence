@@ -15,13 +15,13 @@ This paper proposes **Lightweight Hypothesis-Guided Directional Intelligence (LH
 
 ---
 
-![Fig-010-Perspective-Fields-and-Forward-Guidance.png](figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
+![Fig-010-Perspective-Fields-and-Forward-Guidance.png](../figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
 
 **Figure 010. Perspective Fields and Pre-Decisional Guidance.** Schematic perspective-conditioned landscape with multiple exploration trails. Directional information can prioritize attention and candidate generation before explicit evaluation, subject to task, risk, and governance constraints. The landscape is illustrative and does not require a Euclidean state representation.
 
 ---
 
-![Fig-011-Hypothesis-Reputation-Relay-Loop.png](figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
+![Fig-011-Hypothesis-Reputation-Relay-Loop.png](../figures/Fig-011-Hypothesis-Reputation-Relay-Loop.png)
 
 **Figure 011. Hypothesis–Reputation–Relay Loop.** A proposed low-budget cycle in which directional hypotheses guide targeted evidence gathering, evaluation updates context-specific reliability, and provenance-preserving relay supports further testing. Promotion of OTHERS evidence into established matching features requires independent validation and governance rather than mere repetition.
 

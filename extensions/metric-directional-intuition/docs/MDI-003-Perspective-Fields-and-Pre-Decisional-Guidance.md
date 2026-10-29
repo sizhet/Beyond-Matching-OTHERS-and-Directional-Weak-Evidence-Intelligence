@@ -12,7 +12,7 @@ Directional evidence need not wait until a fully specified action or decision is
 
 ---
 
-![Fig-010-Perspective-Fields-and-Forward-Guidance.png](figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
+![Fig-010-Perspective-Fields-and-Forward-Guidance.png](../figures/Fig-010-Perspective-Fields-and-Forward-Guidance.png)
 
 **Figure 010. Perspective Fields and Pre-Decisional Guidance.** Schematic perspective-conditioned landscape with multiple exploration trails. Directional information can prioritize attention and candidate generation before explicit evaluation, subject to task, risk, and governance constraints. The landscape is illustrative and does not require a Euclidean state representation.
 

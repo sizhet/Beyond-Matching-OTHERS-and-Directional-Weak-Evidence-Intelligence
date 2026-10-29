@@ -12,7 +12,7 @@ Directional weak-evidence scoring should not be identified with a particular emb
 
 ---
 
-![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
+![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](../figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
 
 **Figure 009. Euclidean vs. Metric-Native Directional Scoring.** The Euclidean route evaluates alignment through normalized vector projections; the metric-native route evaluates progress toward a goal set using changes in a distance-to-goal potential. The latter does not require a Euclidean embedding, provided the metric and goal set satisfy the stated assumptions.
 
