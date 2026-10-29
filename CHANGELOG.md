@@ -32,7 +32,7 @@ This project follows the principles of [Keep a Changelog](https://keepachangelog
 - `START-HERE.md` — guided reading paths and quick introduction.
 - `CONTENTS.md` — structured table of contents.
 - `GLOSSARY.md` — shared terminology and conceptual boundaries.
-- `FIGURE-INDEX.md` — seven planned figure titles, captions, and placement guidance.
+- `FIGURE-INDEX.md` — seven figure titles, captions, and placement guidance.
 - `FUTURE-DIRECTIONS.md` — research questions and staged validation roadmap.
 - `CHANGELOG.md` — release history.
 

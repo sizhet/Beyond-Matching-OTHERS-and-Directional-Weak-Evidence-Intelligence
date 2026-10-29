@@ -7,6 +7,14 @@
 **License:** Apache-2.0  
 **Status:** Conceptual and algorithmic proposals; empirical claims remain to be validated.
 
+---
+
+![Fig-001-Beyond-Matching-Grand-Map.png](figures/Fig-001-Beyond-Matching-Grand-Map.png)
+
+*Fig-001. Beyond Matching grand map: formal features and residual evidence feed directional assessment, structural learning, and governed choice. Conceptual architecture.*
+
+---
+
 > Not everything that matters can initially be matched. Intelligence must be able to evaluate directional evidence beyond formal matching, learn from its consequences, and progressively transform useful residual signals into explicit structural knowledge.
 
 ## 1. Why Beyond Matching?

@@ -15,9 +15,9 @@
 | [README.md](README.md) | Project vision, core contributions, architecture, and research positioning |
 | [START-HERE.md](START-HERE.md) | Guided reading paths for new readers, algorithm designers, and social-science researchers |
 | **CONTENTS.md** | Canonical map of papers, figures, concepts, and release resources |
-| [GLOSSARY.md](GLOSSARY.md) | Shared terminology and definitions (planned) |
-| [FIGURE-INDEX.md](FIGURE-INDEX.md) | Figure descriptions and placement guide (planned) |
-| [FUTURE-DIRECTIONS.md](FUTURE-DIRECTIONS.md) | Open questions and next-phase research (planned) |
+| [GLOSSARY.md](GLOSSARY.md) | Shared terminology and definitions |
+| [FIGURE-INDEX.md](FIGURE-INDEX.md) | Figure descriptions and placement guide |
+| [FUTURE-DIRECTIONS.md](FUTURE-DIRECTIONS.md) | Open questions and next-phase research |
 
 ## 2. Research Papers — Canonical Reading Order
 
@@ -107,13 +107,13 @@ The framework connects to the broader Structural Intelligence (SI) program, incl
 
 | Resource | Role |
 |---|---|
-| `CHANGELOG.md` | Version history (planned) |
-| `CITATION.cff` | Citation metadata (planned; DOI to be added after assignment) |
-| `.zenodo.json` | Zenodo deposition metadata (planned) |
+| `CHANGELOG.md` | Version history |
+| `CITATION.cff` | Citation metadata |
+| `.zenodo.json` | Zenodo deposition metadata |
 | `LICENSE.txt` | Apache License 2.0 |
-| `release/GitHub-Release-Notes-v1.0.0.md` | GitHub release narrative (planned) |
-| `release/ResearchGate-Description.txt` | Short ResearchGate description (planned) |
-| `release/BM-ODWEI-v1.0.0-ResearchGate-Overview.pdf` | One-page ResearchGate overview (planned) |
+| `release/GitHub-Release-Notes-v1.0.0.md` | GitHub release narrative |
+| `release/ResearchGate-Description.txt` | Short ResearchGate description |
+| `release/BM-ODWEI-v1.0.0-ResearchGate-Overview.pdf` | One-page ResearchGate overview |
 
 ## 8. Version Roadmap
 

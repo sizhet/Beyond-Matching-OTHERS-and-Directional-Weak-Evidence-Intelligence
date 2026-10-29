@@ -114,7 +114,7 @@ Evaluate prediction/ranking quality, calibration, action utility, out-of-distrib
 
 ## 8. Figures and Navigation
 
-The planned seven standalone figures are listed below; their paths become active when the corresponding PNG files are installed under `figures/`:
+The seven standalone figures are listed below; their paths become active when the corresponding PNG files are installed under `figures/`:
 
 | Figure | Subject |
 |---|---|
