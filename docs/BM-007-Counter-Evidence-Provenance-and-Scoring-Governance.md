@@ -68,7 +68,7 @@ The system should distinguish three planes:
 
 A fourth, cross-cutting **governance control plane** defines admissibility, access, promotion rights, escalation requirements, and audit obligations. It must not be confused with an additional scoring direction.
 
-Formally, let an evidence collection be \(\mathcal E\), a perspective contract \(P\), context \(C\), goal \(G\), and policy \(\Pi\):
+Formally, let an evidence collection be $\mathcal E$, a perspective contract $P$, context $C$, goal $G$, and policy $\Pi$:
 
 $$
 \mathcal E^{\mathrm{adm}} = operatorname{Admit}(\mathcal E; C,\Pi),
@@ -123,7 +123,7 @@ If a model summarizes ten reports into one statement, the derived statement must
 
 ## 5. Correlation Control: Repetition Is Not Independent Evidence
 
-Let \(z_i\) be a bounded directional contribution from signal \(i\). The naive sum
+Let $z_i$ be a bounded directional contribution from signal $i$. The naive sum
 
 $$
 R_k^{\mathrm{naive}}=\sum_i w_i z_{ik}
@@ -131,13 +131,13 @@ $$
 
 can inflate confidence when signals share the same source or causal pathway.
 
-A first approximation is to group evidence into provenance clusters \(c\), then aggregate within each cluster before combining clusters:
+A first approximation is to group evidence into provenance clusters $c$, then aggregate within each cluster before combining clusters:
 
 $$
 R_k=\sum_{c=1}^{C} W_c\,h_k(\{z_i:i\in c\}),
 $$
 
-where \(h_k\) is a cluster-level summary and \(W_c\) reflects reliability and demonstrated independence. This is an **illustrative design**, not a statistically validated estimator. The number of clusters is not automatically the effective sample size.
+where $h_k$ is a cluster-level summary and $W_c$ reflects reliability and demonstrated independence. This is an **illustrative design**, not a statistically validated estimator. The number of clusters is not automatically the effective sample size.
 
 For continuous measurements with a defensible covariance estimate, a generalized least-squares or Bayesian dependence model may be more appropriate. When dependencies are unknown, confidence should be widened, not inferred from raw message counts.
 
@@ -169,7 +169,7 @@ Promotion to a Metric, CCC, or Principle is not irreversible. New counter-eviden
 
 ## 7. Directional Scoring With Explicit Uncertainty
 
-A DMS output should not be just a scalar \(R_k\). We propose a scoped score record:
+A DMS output should not be just a scalar $R_k$. We propose a scoped score record:
 
 $$
 \mathcal S_k=(R_k,\;Q_k,\;I_k,\;C_k,\;A_k),
@@ -177,11 +177,11 @@ $$
 
 where:
 
-- \(R_k\): directional assessment;
-- \(Q_k\): evidence quality descriptor;
-- \(I_k\): uncertainty interval or distribution, if defensible;
-- \(C_k\): counter-evidence summary;
-- \(A_k\): applicability and abstention status.
+- $R_k$: directional assessment;
+- $Q_k$: evidence quality descriptor;
+- $I_k$: uncertainty interval or distribution, if defensible;
+- $C_k$: counter-evidence summary;
+- $A_k$: applicability and abstention status.
 
 Uncertainty intervals should be labeled according to their actual construction. A heuristic range must not be presented as a statistically calibrated confidence interval. Calibration should be tested on held-out, time-separated, and out-of-domain samples where possible.
 

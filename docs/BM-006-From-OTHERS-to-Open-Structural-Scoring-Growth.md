@@ -43,7 +43,7 @@ The fourth case must not silently transfer decision authority from a human or go
 
 ## 2. Definitions and Scope
 
-Let an observation event at time \(t\) be \(e_t\), the explicit structural knowledge base be \(K_t\), and the current evaluation perspective be \(P_t\). Define the operational residual evidence set:
+Let an observation event at time $t$ be $e_t$, the explicit structural knowledge base be $K_t$, and the current evaluation perspective be $P_t$. Define the operational residual evidence set:
 
 $$
 O_t = \{e \in E_{\le t}: e\text{ is not adequately explained or represented by }K_t\}.
@@ -78,7 +78,7 @@ K_{t+1}
 O_{t+1}.
 $$
 
-Here \(R_t\) denotes direction-conditioned responses, \(H_t\) candidate hypotheses, and \(K_{t+1}\) the revised explicit structural store. The arrows are *process stages*, not guaranteed transformations: a stage may abstain, reject a candidate, or return it for further evidence collection.
+Here $R_t$ denotes direction-conditioned responses, $H_t$ candidate hypotheses, and $K_{t+1}$ the revised explicit structural store. The arrows are *process stages*, not guaranteed transformations: a stage may abstain, reject a candidate, or return it for further evidence collection.
 
 ![Fig-005-OTHERS-Structural-Growth-Loop.png](../figures/Fig-005-OTHERS-Structural-Growth-Loop.png)
 
@@ -99,13 +99,13 @@ The loop is open-ended in the sense that the schema can change. It is not uncons
 
 ## 4. Directional Measurement Sails as Discovery Sensors
 
-A Directional Measurement Sail (DMS) is a response function associated with a particular evaluation direction \(u_k\). For evidence units \(e_i\), a simple candidate score is:
+A Directional Measurement Sail (DMS) is a response function associated with a particular evaluation direction $u_k$. For evidence units $e_i$, a simple candidate score is:
 
 $$
 R_k(x,t)=\sum_{i\in I(x,t)} w_{ik}(t)\,q_i(t)\,g_k(e_i,u_k),
 $$
 
-where \(w_{ik}\) denotes influence, \(q_i\) source quality, and \(g_k\) a direction-specific response. This expression is a **baseline proposal**, not a calibrated probability or a metric. Correlated sources cannot generally be handled by simple independent summation.
+where $w_{ik}$ denotes influence, $q_i$ source quality, and $g_k$ a direction-specific response. This expression is a **baseline proposal**, not a calibrated probability or a metric. Correlated sources cannot generally be handled by simple independent summation.
 
 A more robust representation preserves a structured output:
 
@@ -113,7 +113,7 @@ $$
 \mathcal{R}_k(x,t)=\bigl(\widehat r_k,\;\mathcal U_k,\;n_{\mathrm{eff},k},\;\Pi_k,\;A_k\bigr),
 $$
 
-where \(\mathcal U_k\) is uncertainty, \(n_{\mathrm{eff},k}\) an estimate of effective independent evidence, \(\Pi_k\) provenance, and \(A_k\) an abstention or alert state.
+where $\mathcal U_k$ is uncertainty, $n_{\mathrm{eff},k}$ an estimate of effective independent evidence, $\Pi_k$ provenance, and $A_k$ an abstention or alert state.
 
 ### 4.1 From directional effects to new structure
 
@@ -182,7 +182,7 @@ A proposed structure should not be promoted merely because it correlates with a 
 
 ### 6.2 A promotion rule
 
-Let \(\Delta V(H)\) be estimated out-of-sample incremental value, \(C(H)\) implementation and maintenance cost, and \(\rho(H)\) an uncertainty or risk penalty. One possible policy is:
+Let $\Delta V(H)$ be estimated out-of-sample incremental value, $C(H)$ implementation and maintenance cost, and $\rho(H)$ an uncertainty or risk penalty. One possible policy is:
 
 $$
 operatorname{Promote}(H)=1
@@ -198,13 +198,13 @@ Every promoted item should specify a revalidation schedule, monitoring signals, 
 
 ## 7. The Residual Principle: OTHERS Never Disappears by Definition
 
-After a candidate \(H_t\) is validated and integrated, the system should not simply subtract all supporting observations from OTHERS. The residual is better expressed operationally as:
+After a candidate $H_t$ is validated and integrated, the system should not simply subtract all supporting observations from OTHERS. The residual is better expressed operationally as:
 
 $$
 O_{t+1}=operatorname{Residual}(E_{\le t+1},K_{t+1},\epsilon,P_{t+1}),
 $$
 
-where \(\epsilon\) is an adequacy tolerance. Previously understood evidence can become residual again if context changes or an explanation fails.
+where $\epsilon$ is an adequacy tolerance. Previously understood evidence can become residual again if context changes or an explanation fails.
 
 This gives three forms of openness:
 

@@ -115,23 +115,23 @@ These are proposed logical interfaces, not finalized wire protocols. Each interf
 
 ### 4.1 From matched features to open evidence
 
-For objects or states \(x,y\), perspective \(P\), and context \(C\):
+For objects or states $x,y$, perspective $P$, and context $C$:
 
 $$
 S(x,y\mid P,C)=F(E_{xy},M_{xy},O_{xy};P,C).
 $$
 
-Here \(E_{xy}\) and \(M_{xy}\) represent declared matched components, while \(O_{xy}\) contains relevant *candidate* residual signals. The function \(F\) must specify output semantics; it may produce a vector, distribution, partial order, or abstention rather than a scalar.
+Here $E_{xy}$ and $M_{xy}$ represent declared matched components, while $O_{xy}$ contains relevant *candidate* residual signals. The function $F$ must specify output semantics; it may produce a vector, distribution, partial order, or abstention rather than a scalar.
 
 ### 4.2 Directional response
 
-For a direction \(k\), a simple illustrative sail is
+For a direction $k$, a simple illustrative sail is
 
 $$
 R_k(x)=\sum_{i=1}^{n} w_i q_i\,g_k(v_i,u_k),
 $$
 
-where \(v_i\) represents signal \(i\), \(u_k\) is the declared direction, \(w_i\) is an aggregation weight, \(q_i\) is an evidence-quality factor, and \(g_k\) is the response function. This equation is **not** a validated estimator. Naive addition fails under correlated reports; practical designs must use dependency-aware aggregation, uncertainty propagation, calibration, and potentially non-additive models.
+where $v_i$ represents signal $i$, $u_k$ is the declared direction, $w_i$ is an aggregation weight, $q_i$ is an evidence-quality factor, and $g_k$ is the response function. This equation is **not** a validated estimator. Naive addition fails under correlated reports; practical designs must use dependency-aware aggregation, uncertainty propagation, calibration, and potentially non-additive models.
 
 A robust output can be represented as
 
@@ -165,7 +165,7 @@ O_t\xrightarrow{\mathrm{sense}}H_t
 \xrightarrow{\mathrm{challenge+validate}}K_{t+1},
 $$
 
-where \(H_t\) is a candidate feature, relation, sail, or principle, and \(K_{t+1}\) is a promoted structural representation. Failed and unresolved hypotheses remain contestable; a residual \(O_{t+1}\) remains open.
+where $H_t$ is a candidate feature, relation, sail, or principle, and $K_{t+1}$ is a promoted structural representation. Failed and unresolved hypotheses remain contestable; a residual $O_{t+1}$ remains open.
 
 ## 5. End-to-End Processing Lifecycle
 

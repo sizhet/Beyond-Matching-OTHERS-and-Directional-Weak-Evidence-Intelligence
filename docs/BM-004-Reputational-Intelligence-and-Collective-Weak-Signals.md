@@ -49,7 +49,7 @@ $$
 \mathcal E_t = \mathcal E_{\mathrm{matched},t}\ \cup\ \mathcal O_t.
 $$
 
-The partition depends on the current schema and context; it need not be disjoint in a literal data-storage implementation. Reputational evidence may initially reside in \(\mathcal O_t\), then become formally represented as reliable predictors after validation.
+The partition depends on the current schema and context; it need not be disjoint in a literal data-storage implementation. Reputational evidence may initially reside in $\mathcal O_t$, then become formally represented as reliable predictors after validation.
 
 **Important boundary:** RI is one source within OTHERS, not a synonym for all OTHERS.
 
@@ -79,7 +79,7 @@ $$
 
 such as safety, reliability, innovation, opportunity, or trustworthiness. These are **evaluation directions**, not necessarily Euclidean axes.
 
-For target \(x\), context \(c\), and time \(t\), define a provisional directional field:
+For target $x$, context $c$, and time $t$, define a provisional directional field:
 
 $$
 \mathbf R(x\mid c,t) = [R_1(x\mid c,t),\ldots,R_K(x\mid c,t)].
@@ -95,7 +95,7 @@ $$
 \rho_{ik}=g_\theta(e_i,u_k,c,t),
 $$
 
-where \(e_i\) is an evidence item, \(u_k\) is the direction, and \(g_\theta\) may be a rule, learned model, or structured inference function. The response can be positive, negative, near zero, or undefined.
+where $e_i$ is an evidence item, $u_k$ is the direction, and $g_\theta$ may be a rule, learned model, or structured inference function. The response can be positive, negative, near zero, or undefined.
 
 The sail metaphor emphasizes that the same incoming signal can have different effects under different orientations. It does not imply that social evidence is literally a physical force.
 
@@ -133,13 +133,13 @@ $$
 
 This is useful as an introductory expression, but dangerous when reports share a common source. One rumor copied a thousand times does not become a thousand independent observations.
 
-A more defensible formulation groups reports into inferred provenance clusters \(G_1,\ldots,G_m\):
+A more defensible formulation groups reports into inferred provenance clusters $G_1,\ldots,G_m$:
 
 $$
 R_k(x)=\frac{\sum_{j=1}^{m}W_j\,A_k(G_j)}{\sum_{j=1}^{m}W_j+\varepsilon},
 $$
 
-where \(A_k(G_j)\) summarizes the directional contribution of cluster \(j\), \(W_j\) is its quality-adjusted weight, and \(\varepsilon>0\) avoids division by zero. This is a *candidate heuristic*, not a universally unbiased estimator.
+where $A_k(G_j)$ summarizes the directional contribution of cluster $j$, $W_j$ is its quality-adjusted weight, and $\varepsilon>0$ avoids division by zero. This is a *candidate heuristic*, not a universally unbiased estimator.
 
 More rigorous implementations may use explicit dependence graphs, hierarchical Bayesian models, robust estimators, or bounded influence functions. The model should disclose whether dependence is observed, estimated, or unknown.
 
@@ -168,7 +168,7 @@ $$
 \tau_i(t)=\exp[-\lambda_k(t-t_i)], \qquad t\ge t_i,
 $$
 
-with direction-specific decay rate \(\lambda_k\). This exponential is only a baseline; some historical facts should not decay automatically.
+with direction-specific decay rate $\lambda_k$. This exponential is only a baseline; some historical facts should not decay automatically.
 
 Context transfer also needs explicit checks. A reputation for fast delivery in one market may not generalize to another jurisdiction, scale, or supply chain. The system should track **scope**, **domain shift**, and **known counterexamples**, rather than assuming universal applicability.
 
@@ -231,11 +231,11 @@ $$
 
 where:
 
-- \(O_t\): residual, not-yet-formalized evidence;
-- \(R_t\): directional response patterns;
-- \(H_t\): candidate structural hypotheses;
-- \(V_t\): independent validation and counter-evidence testing;
-- \(K_{t+1}\): accepted explicit metrics, CCC patterns, or principles.
+- $O_t$: residual, not-yet-formalized evidence;
+- $R_t$: directional response patterns;
+- $H_t$: candidate structural hypotheses;
+- $V_t$: independent validation and counter-evidence testing;
+- $K_{t+1}$: accepted explicit metrics, CCC patterns, or principles.
 
 The residual OTHERS space remains open after promotion. Validation may reject or demote candidates, and previously accepted structures may need revision after domain shifts.
 
