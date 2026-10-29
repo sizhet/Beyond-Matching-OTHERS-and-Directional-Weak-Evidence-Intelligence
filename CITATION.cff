@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this research repository, please cite it using the metadata below."
-type: software
+type: generic
 title: "Beyond Matching: OTHERS, Directional Weak-Evidence Scoring, and Reputational Intelligence"
 authors:
   - family-names: Tan
