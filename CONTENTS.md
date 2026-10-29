@@ -19,7 +19,6 @@
 [v1.1.0 metric-directional-intuition](extensions/metric-directional-intuition)
 
 ---
----
 
 # v1.0.0 Contents
 
