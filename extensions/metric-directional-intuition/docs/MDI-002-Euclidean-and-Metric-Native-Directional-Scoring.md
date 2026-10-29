@@ -10,6 +10,12 @@
 
 Directional weak-evidence scoring should not be identified with a particular embedding or cosine operator. This paper develops two complementary computational routes: (i) **Euclidean Directional Sails**, which project feature vectors onto perspective directions, and (ii) **Metric-Native Directional Differences**, which evaluate progress toward perspective-conditioned target sets directly from a metric. We prove a boundedness result for normalized changes in distance-to-target, state its exact assumptions, and derive the local connection to Euclidean gradient projection. We distinguish directional utility from directional agreement and strict mathematical metrics from bounded distance-like scores. We then specify multi-perspective aggregation, missing-evidence behavior, score composition, robustness constraints, counterexamples, and a minimal conformance and validation agenda. The goal is a representation-agnostic operator suitable for the BM-ODWEI OTHERS pathway and future MET integration—not a claim that biological intuition uses these computations.
 
+---
+
+![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](../figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
+
+---
+
 ## 1. Research Position and Scope
 
 BM-ODWEI establishes the progression **Matching → OTHERS → Directional Measurement Sails → Reputational Intelligence → Structural Growth → Evidence Governance**. MDI-001 defines the problem and research boundaries. MDI-002 asks a narrower, mathematical question: *How can perspective-dependent directional evidence be converted into a controlled, auditable score without assuming that all meaningful directionality is Euclidean?*

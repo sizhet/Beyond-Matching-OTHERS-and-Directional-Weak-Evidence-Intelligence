@@ -9,6 +9,12 @@
 
 Conventional structural similarity systems primarily assess what can be aligned, matched, or measured through an established representation. Yet potentially consequential evidence can remain outside reliable matching: unaligned components, context-dependent tendencies, directional cues, and weak observations. This paper defines the problem of **perspective-conditioned directional intuition** as an extension to structural matching, not a replacement for it. It separates structural similarity, directional utility, directional agreement, evidence reliability, and distance-like ranking scores; specifies Euclidean and metric-native research routes; and introduces a representation-agnostic directional scoring contract. It also identifies the boundaries between proven mathematical properties, engineering hypotheses, and claims about animal or human intuition. The objective is to create a falsifiable research interface through which OTHERS evidence can be scored, challenged, calibrated, relayed, and eventually promoted into reliable structural matching capabilities.
 
+---
+
+![Fig-009-Euclidean-vs-Metric-Native-Scoring.png](../figures/Fig-009-Euclidean-vs-Metric-Native-Scoring.png)
+
+---
+
 ## 1. Motivation and Relationship to BM-ODWEI
 
 BM-ODWEI proposes a research trajectory:
