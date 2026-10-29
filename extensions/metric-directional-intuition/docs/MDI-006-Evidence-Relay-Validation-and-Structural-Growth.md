@@ -4,7 +4,7 @@
 **Parent research program:** Beyond Matching: OTHERS and Directional Weak-Evidence Intelligence (BM-ODWEI)  
 **Status:** Theory-first research proposal; candidate contracts and falsifiable hypotheses  
 **Version:** 1.1.0 research-extension draft  
-**Date:** 2026-10-27
+**Date:** 2026-10-29
 
 ## Abstract
 
@@ -38,7 +38,7 @@ The answer requires **evidence relay**, **independent validation**, and **govern
 
 The proposed architecture covers: (i) evidence records, (ii) directional-scoring result records, (iii) hypothesis and test records, (iv) provenance and reputation, (v) cross-context relay, (vi) validation, and (vii) controlled promotion of residual evidence into matching features or structural units.
 
-It does **not** establish that a directional similarity score is a metric. In particular, a score-defined dissimilarity \(D_I=1-S_I\) need not be symmetric, satisfy identity of indiscernibles, or obey the triangle inequality. Nor does it establish that metric-native scoring is biologically implemented by animals, that Beta-Bernoulli updates are calibrated in every setting, or that structural growth is guaranteed. Those are distinct hypotheses requiring empirical work.
+It does **not** establish that a directional similarity score is a metric. In particular, a score-defined dissimilarity $D_I=1-S_I$ need not be symmetric, satisfy identity of indiscernibles, or obey the triangle inequality. Nor does it establish that metric-native scoring is biologically implemented by animals, that Beta-Bernoulli updates are calibrated in every setting, or that structural growth is guaranteed. Those are distinct hypotheses requiring empirical work.
 
 ## 3. Architectural Overview
 
@@ -100,17 +100,17 @@ $$
 R_D=(A,B,P,M,O,\hat s,u,e,\nu),
 $$
 
-where \(A,B\) are evaluated structures or transitions, \(P\) is the perspective, \(M\) the metric or structural-relation contract, \(O\) the operator specification, \(\hat s\) the result, \(u\) an uncertainty description, \(e\) evidence references, and \(\nu\) versioned implementation metadata.
+where $A,B$ are evaluated structures or transitions, $P$ is the perspective, $M$ the metric or structural-relation contract, $O$ the operator specification, $\hat s$ the result, $u$ an uncertainty description, $e$ evidence references, and $\nu$ versioned implementation metadata.
 
-For a metric space \((\mathcal X,d)\) and nonempty goal set \(G_P\), the candidate metric-native operator is
+For a metric space $(\mathcal X,d)$ and nonempty goal set $G_P$, the candidate metric-native operator is
 
 $$
 C_P(x,y)=\frac{d(x,G_P)-d(y,G_P)}{d(x,y)},\qquad x\ne y.
 $$
 
-Provided \(d(x,G_P)=\inf_{g\in G_P}d(x,g)\) is finite, distance-to-set is 1-Lipschitz and therefore \(-1\le C_P(x,y)\le1\). For \(x=y\), the operator requires an explicit undefined, neutral, or no-transition policy; a division by zero must not be concealed. The goal set, metric, and state mapping are essential relay metadata: transferring the number alone destroys its semantics.
+Provided $d(x,G_P)=\inf_{g\in G_P}d(x,g)$ is finite, distance-to-set is 1-Lipschitz and therefore $-1\le C_P(x,y)\le1$. For $x=y$, the operator requires an explicit undefined, neutral, or no-transition policy; a division by zero must not be concealed. The goal set, metric, and state mapping are essential relay metadata: transferring the number alone destroys its semantics.
 
-In Euclidean directional sails, the operator may instead use normalized vector alignment; in a learned structural relation, it may use \(\Phi_P(x,y)\). These three **representation routes** must not be conflated with the independent **hypothesis-testing mechanism** of MDI-005.
+In Euclidean directional sails, the operator may instead use normalized vector alignment; in a learned structural relation, it may use $\Phi_P(x,y)$. These three **representation routes** must not be conflated with the independent **hypothesis-testing mechanism** of MDI-005.
 
 ## 6. Evidence Relay Contracts
 
@@ -188,7 +188,7 @@ Prespecify evaluation datasets, train/validation/test separation, outcome defini
 
 ## 11. OTHERS-to-Feature Promotion
 
-Let \(e\) be a residual signal not already explained by the matching feature set \(\mathcal F\). Promotion is a governed state transition:
+Let $e$ be a residual signal not already explained by the matching feature set $\mathcal F$. Promotion is a governed state transition:
 
 ```text
 Unexplained residual
@@ -202,13 +202,13 @@ Unexplained residual
     -> post-promotion monitoring or rollback
 ```
 
-A proposed feature \(f_e\) should be promoted only if it (a) has a stable operational definition, (b) provides incremental predictive or decision value on held-out data, (c) does not double-count existing evidence, (d) satisfies policy constraints, and (e) retains counter-evidence and provenance. A useful decision criterion is
+A proposed feature $f_e$ should be promoted only if it (a) has a stable operational definition, (b) provides incremental predictive or decision value on held-out data, (c) does not double-count existing evidence, (d) satisfies policy constraints, and (e) retains counter-evidence and provenance. A useful decision criterion is
 
 $$
 \Delta U_e=U(\mathcal F\cup\{f_e\})-U(\mathcal F)-operatorname{Cost}(f_e),
 $$
 
-estimated out of sample and subject to governance gates. Positive \(\Delta U_e\) is necessary under this objective, but not sufficient for universal promotion. Domain drift may require rollback; a feature may remain useful only for a specific perspective or context.
+estimated out of sample and subject to governance gates. Positive $\Delta U_e$ is necessary under this objective, but not sufficient for universal promotion. Domain drift may require rollback; a feature may remain useful only for a specific perspective or context.
 
 ## 12. Cross-Agent and Cross-Context Interoperability
 

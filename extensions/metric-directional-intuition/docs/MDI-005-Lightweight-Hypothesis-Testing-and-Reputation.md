@@ -3,7 +3,7 @@
 **Series:** Metric-Directional Intuition (MDI), a research extension of *Beyond Matching: OTHERS and Directional Weak-Evidence Intelligence (BM-ODWEI)*  
 **Status:** Research proposal / theory-first specification  
 **Version target:** BM-ODWEI v1.1.0 (proposed)  
-**Date:** 2026-10-27  
+**Date:** 2026-10-29  
 **Scope:** Low-cost directional hypothesis generation, discriminating evidence, reliability estimation, and governed decision support.  
 **Dependencies:** MDI-001–004; especially MDI-002's metric-native directional operator and MDI-004's residual evidence allocation.
 
@@ -39,14 +39,14 @@ The term *intuitive* denotes the operational target—fast, selective, limited-b
 
 ## 2. Definitions and separation of quantities
 
-Let \((\mathcal X,d)\) be a metric state space, \(x\in\mathcal X\) the current state, \(P\) a perspective (goal, risk policy, and relevant context), \(\mathcal A(x)\) a feasible action set, and \(E\) observed evidence. A hypothesis \(H_j\) is a testable proposition about the state, an action outcome, a causal explanation, or the validity of a directional relation. A test \(t\) yields an observation \(o\) with an associated cost.
+Let $(\mathcal X,d)$ be a metric state space, $x\in\mathcal X$ the current state, $P$ a perspective (goal, risk policy, and relevant context), $\mathcal A(x)$ a feasible action set, and $E$ observed evidence. A hypothesis $H_j$ is a testable proposition about the state, an action outcome, a causal explanation, or the validity of a directional relation. A test $t$ yields an observation $o$ with an associated cost.
 
 Keep at least five quantities distinct:
 
-1. **Belief** \(b_j=P(H_j\mid E,c)\): probability assigned to the hypothesis in context \(c\), under an explicitly stated model.
-2. **Source reliability** \(r_s(c)\): how often source \(s\) provides appropriately calibrated or correct information in comparable contexts.
-3. **Directional value** \(C_P(x,y)\): whether transition \(x\to y\) advances the perspective, according to a declared directional operator.
-4. **Decision utility** \(U(a,H_j,P)\): consequences of taking action \(a\) if \(H_j\) is true or false.
+1. **Belief** $b_j=P(H_j\mid E,c)$: probability assigned to the hypothesis in context $c$, under an explicitly stated model.
+2. **Source reliability** $r_s(c)$: how often source $s$ provides appropriately calibrated or correct information in comparable contexts.
+3. **Directional value** $C_P(x,y)$: whether transition $x\to y$ advances the perspective, according to a declared directional operator.
+4. **Decision utility** $U(a,H_j,P)$: consequences of taking action $a$ if $H_j$ is true or false.
 5. **Evidence/score confidence**: an uncertainty descriptor for the estimation procedure; not interchangeable with any of the above.
 
 A hypothesis may be highly probable but unimportant, while a low-probability hypothesis may be worth checking because its consequences are severe. Similarly, a reliable source can provide weak evidence on a specific occasion.
@@ -55,12 +55,12 @@ A hypothesis may be highly probable but unimportant, while a low-probability hyp
 
 A **directional hypothesis** proposes a testable relation between a prospective transition and a perspective. Examples include:
 
-- \(H_1\): moving toward region \(R\) reduces distance to a designated goal set;
-- \(H_2\): an observed signal predicts a high-cost hazard;
-- \(H_3\): a candidate structural feature, currently classified as OTHERS, improves prediction of outcomes;
-- \(H_4\): a previously trusted source is unreliable under the current context shift.
+- $H_1$: moving toward region $R$ reduces distance to a designated goal set;
+- $H_2$: an observed signal predicts a high-cost hazard;
+- $H_3$: a candidate structural feature, currently classified as OTHERS, improves prediction of outcomes;
+- $H_4$: a previously trusted source is unreliable under the current context shift.
 
-Let \(\mathcal H_K=\{H_1,\ldots,H_K\}\) be a bounded portfolio, where \(K\) is limited by a computational budget. Candidate generation can use a direction field, metric potential, structural precedent, counterexample, or externally relayed evidence. It must not equate *high directional alignment* with *truth*.
+Let $\mathcal H_K=\{H_1,\ldots,H_K\}$ be a bounded portfolio, where $K$ is limited by a computational budget. Candidate generation can use a direction field, metric potential, structural precedent, counterexample, or externally relayed evidence. It must not equate *high directional alignment* with *truth*.
 
 A practical generation contract is:
 
@@ -70,21 +70,21 @@ Hypothesis diversity matters: selecting only mutually reinforcing hypotheses ris
 
 ## 4. Metric-native directional evidence
 
-For a nonempty goal set \(G_P\subseteq\mathcal X\), define \(V_P(x)=d(x,G_P)=\inf_{g\in G_P}d(x,g)\). For \(x\neq y\), define
+For a nonempty goal set $G_P\subseteq\mathcal X$, define $V_P(x)=d(x,G_P)=\inf_{g\in G_P}d(x,g)$. For $x\neq y$, define
 
 $$
 C_P(x,y)=\frac{V_P(x)-V_P(y)}{d(x,y)}.
 $$
 
-Because distance to a set is 1-Lipschitz, \(|V_P(x)-V_P(y)|\le d(x,y)\), so \(C_P(x,y)\in[-1,1]\). For \(x=y\), the ratio is undefined and must be handled by an explicit no-transition policy rather than division by zero.
+Because distance to a set is 1-Lipschitz, $|V_P(x)-V_P(y)|\le d(x,y)$, so $C_P(x,y)\in[-1,1]$. For $x=y$, the ratio is undefined and must be handled by an explicit no-transition policy rather than division by zero.
 
-If an action \(a\) produces a predicted next state \(\hat y_a\), then \(\hat C_P(x,a)=C_P(x,\hat y_a)\) is a **model-conditioned prediction**, not an observed fact. The prediction model and its uncertainty must accompany the score.
+If an action $a$ produces a predicted next state $\hat y_a$, then $\hat C_P(x,a)=C_P(x,\hat y_a)$ is a **model-conditioned prediction**, not an observed fact. The prediction model and its uncertainty must accompany the score.
 
-A more general structural relation \(\Phi_P(x,y)\in[-1,1]\) may be learned directly and need not derive from any global potential. Such a relation can be asymmetric or nontransitive; its assumptions must be declared. Neither formulation implies that an animal's brain literally computes metric distances or Euclidean cosines.
+A more general structural relation $\Phi_P(x,y)\in[-1,1]$ may be learned directly and need not derive from any global potential. Such a relation can be asymmetric or nontransitive; its assumptions must be declared. Neither formulation implies that an animal's brain literally computes metric distances or Euclidean cosines.
 
 ## 5. Lightweight evidence tests
 
-A test is useful when its possible outcomes distinguish hypotheses **and** can change the decision. For a finite set of hypotheses, let \(b(H)\) be the current belief distribution and \(p(o\mid H,t)\) the observation likelihood under test \(t\). Bayes' rule gives
+A test is useful when its possible outcomes distinguish hypotheses **and** can change the decision. For a finite set of hypotheses, let $b(H)$ be the current belief distribution and $p(o\mid H,t)$ the observation likelihood under test $t$. Bayes' rule gives
 
 $$
 b(H\mid o,t)=\frac{p(o\mid H,t)b(H)}{\sum_{H'}p(o\mid H',t)b(H')}.
@@ -98,7 +98,7 @@ $$
 operatorname{EIG}(t)=\mathcal H(b)-\mathbb E_{o\sim p(o\mid t)}[\mathcal H(b(\cdot\mid o,t))],
 $$
 
-where \(\mathcal H\) is entropy. However, information gain alone may prefer a scientifically interesting but decision-irrelevant test. The primary criterion for action guidance should be **expected value of sample information (EVSI)**:
+where $\mathcal H$ is entropy. However, information gain alone may prefer a scientifically interesting but decision-irrelevant test. The primary criterion for action guidance should be **expected value of sample information (EVSI)**:
 
 $$
 operatorname{EVSI}(t)=
@@ -106,7 +106,7 @@ operatorname{EVSI}(t)=
 -\max_a\mathbb E_H U(a,H,P).
 $$
 
-The system should consider a test only when its estimated benefit justifies its observation, latency, and computation costs. With cost \(c(t)\), a simple myopic selection rule is
+The system should consider a test only when its estimated benefit justifies its observation, latency, and computation costs. With cost $c(t)$, a simple myopic selection rule is
 
 $$
 t^*=\arg\max_{t\in\mathcal T}\{operatorname{EVSI}(t)-\lambda c(t)\},
@@ -131,7 +131,7 @@ $$
 \mathbb E[\theta\mid s,f]=\frac{\alpha+s}{\alpha+\beta+s+f},
 $$
 
-where \(s\) and \(f\) count clearly defined successes and failures. This is an inexpensive estimator of an event rate under assumptions of comparable trials; it is **not automatically** the posterior probability of an arbitrary hypothesis, nor does it account for nonstationarity or correlated observations.
+where $s$ and $f$ count clearly defined successes and failures. This is an inexpensive estimator of an event rate under assumptions of comparable trials; it is **not automatically** the posterior probability of an arbitrary hypothesis, nor does it account for nonstationarity or correlated observations.
 
 For source observations, a likelihood-based approach is preferable when sensitivity and specificity are known:
 
@@ -143,11 +143,11 @@ $$
 
 Here the likelihood ratio captures how informative a source's particular report is in context. Reusing the same evidence through multiple agents must not multiply its weight as though the reports were independent.
 
-A heuristic such as \(r\,C_P\) may be used as an explicitly labeled *gated directional signal*, but should not be interpreted as a calibrated expected utility or probability without further assumptions.
+A heuristic such as $r\,C_P$ may be used as an explicitly labeled *gated directional signal*, but should not be interpreted as a calibrated expected utility or probability without further assumptions.
 
 ## 7. Worked example: ambiguous environmental signal
 
-Suppose a mobile agent hears a rustle. Its portfolio contains \(H_1\): hazardous source; \(H_2\): benign wind; and \(H_3\): harmless moving object. The agent has actions *proceed*, *inspect*, and *retreat*. Retreat has a cost, while proceeding under \(H_1\) has a much larger loss. A short inspection can produce evidence that discriminates \(H_1\) from the alternatives.
+Suppose a mobile agent hears a rustle. Its portfolio contains $H_1$: hazardous source; $H_2$: benign wind; and $H_3$: harmless moving object. The agent has actions *proceed*, *inspect*, and *retreat*. Retreat has a cost, while proceeding under $H_1$ has a much larger loss. A short inspection can produce evidence that discriminates $H_1$ from the alternatives.
 
 The correct next step depends on the prior beliefs, the observation model, test cost, and loss matrix. A low prior probability of danger may still justify inspection if the downside is large; a test that is accurate but too slow may be inappropriate. The agent should not simply choose the hypothesis with the largest cosine alignment, nor automatically retreat whenever any weak hazard signal appears.
 
@@ -155,21 +155,21 @@ This example is illustrative and makes no claim that animals use explicit Bayesi
 
 ## 8. An illustrative numerical decision calculation
 
-Consider two hypotheses, \(H\) (hazard) and \(\neg H\), with prior \(P(H)=0.10\). Action *proceed* yields utility \(-100\) under \(H\) and \(0\) otherwise; *retreat* yields \(-8\) regardless of state. Without a test, expected utility of proceeding is \(-10\), so retreat (\(-8\)) is preferred.
+Consider two hypotheses, $H$ (hazard) and $\neg H$, with prior $P(H)=0.10$. Action *proceed* yields utility $-100$ under $H$ and $0$ otherwise; *retreat* yields $-8$ regardless of state. Without a test, expected utility of proceeding is $-10$, so retreat ($-8$) is preferred.
 
-Suppose a test has sensitivity \(0.80\), specificity \(0.90\), and cost \(1\). The probability of a positive report is \(0.8(0.1)+0.1(0.9)=0.17\); the posterior hazard probability is \(0.08/0.17\approx0.4706\). After a negative report, hazard probability is \(0.02/0.83\approx0.0241\). Therefore, retreat after a positive report and proceed after a negative report. The expected utility *before* test cost is
+Suppose a test has sensitivity $0.80$, specificity $0.90$, and cost $1$. The probability of a positive report is $0.8(0.1)+0.1(0.9)=0.17$; the posterior hazard probability is $0.08/0.17\approx0.4706$. After a negative report, hazard probability is $0.02/0.83\approx0.0241$. Therefore, retreat after a positive report and proceed after a negative report. The expected utility *before* test cost is
 
 $$
 0.17(-8)+0.83\left(-100\frac{0.02}{0.83}\right)=-3.36.
 $$
 
-After test cost, utility is \(-4.36\). The EVSI is \(-3.36-(-8)=4.64\), and net benefit is \(3.64\). Thus the test is worth performing under the stated model. The numbers are invented solely to show the computation and are not empirical measurements.
+After test cost, utility is $-4.36$. The EVSI is $-3.36-(-8)=4.64$, and net benefit is $3.64$. Thus the test is worth performing under the stated model. The numbers are invented solely to show the computation and are not empirical measurements.
 
 ## 9. Integrating OTHERS without double counting
 
 MDI-004 requires a separation between established Matching evidence and residual OTHERS evidence. A directional hypothesis may originate from OTHERS, but its evidence must not be counted again when the same signal has already influenced a matching feature, a source reputation, or a related hypothesis.
 
-An evidence ledger should assign every observation an immutable identity and record: source, acquisition method, feature coverage, perspective, transformation lineage, hypothesis associations, dependence group, and acceptance/rejection rationale. The scoring layer can then calculate a residual allocation weight \(w_i^{\mathrm{res}}\in[0,1]\) for signal \(i\), conditional on established coverage and dependence.
+An evidence ledger should assign every observation an immutable identity and record: source, acquisition method, feature coverage, perspective, transformation lineage, hypothesis associations, dependence group, and acceptance/rejection rationale. The scoring layer can then calculate a residual allocation weight $w_i^{\mathrm{res}}\in[0,1]$ for signal $i$, conditional on established coverage and dependence.
 
 A generic, **nonprobabilistic** residual correction is
 
@@ -177,7 +177,7 @@ $$
 S_{\mathrm{new}}=operatorname{clip}_{[0,1]}\bigl(S_M+\eta\,g\,\Delta_{\mathrm{OTHERS}}\bigr),
 $$
 
-where \(S_M\) is baseline matching similarity, \(g\) is a governance gate, and \(\Delta_{\mathrm{OTHERS}}\) is a signed, bounded correction derived from residual evidence. This score is not automatically calibrated; the gate is not a substitute for explicit dependence handling. If no admissible directional evidence exists, the adapter should return \(S_M\) unchanged, with a visible reason code.
+where $S_M$ is baseline matching similarity, $g$ is a governance gate, and $\Delta_{\mathrm{OTHERS}}$ is a signed, bounded correction derived from residual evidence. This score is not automatically calibrated; the gate is not a substitute for explicit dependence handling. If no admissible directional evidence exists, the adapter should return $S_M$ unchanged, with a visible reason code.
 
 ## 10. Minimal system architecture
 
@@ -230,7 +230,7 @@ A conforming consumer must be able to distinguish **unknown**, **not tested**, *
 
 ## 12. Stopping rules and bounded computation
 
-A lightweight design requires explicit budgets: maximum hypotheses \(K\), maximum tests \(T\), observation cost, latency, energy, and memory. Terminate testing when one of the following occurs:
+A lightweight design requires explicit budgets: maximum hypotheses $K$, maximum tests $T$, observation cost, latency, energy, and memory. Terminate testing when one of the following occurs:
 
 - a decision is robust across plausible beliefs;
 - estimated net EVSI is nonpositive or below a configured threshold;

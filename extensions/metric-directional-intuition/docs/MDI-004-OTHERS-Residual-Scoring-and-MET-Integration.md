@@ -32,27 +32,27 @@ Out of scope are claims that the proposed operators form a mathematical metric, 
 
 ## 2. Baseline Evaluation Contract
 
-Let \(A\) and \(B\) be objects, structures, or states in a domain \(\mathcal X\). Let \(P\) be a declared perspective or goal specification, and \(E\) the available evidence. Assume an existing MET baseline produces
+Let $A$ and $B$ be objects, structures, or states in a domain $\mathcal X$. Let $P$ be a declared perspective or goal specification, and $E$ the available evidence. Assume an existing MET baseline produces
 
 $$
 S_M(A,B\mid E_M)\in[0,1],
 $$
 
-where \(E_M\) contains the evidence used by established matching features. Larger scores denote greater baseline similarity; this convention must be stated rather than assumed for all applications.
+where $E_M$ contains the evidence used by established matching features. Larger scores denote greater baseline similarity; this convention must be stated rather than assumed for all applications.
 
 The baseline contract must specify: feature definitions, feature coverage, missing-data handling, calibration domain, symmetry (if any), score semantics, and evaluator version. The directional extension **must not silently redefine** these baseline semantics.
 
-Define a separate residual evidence collection \(E_O\), with lineage linking it to raw observations. Merely labeling an observation “OTHERS” does not prove independence from \(E_M\).
+Define a separate residual evidence collection $E_O$, with lineage linking it to raw observations. Merely labeling an observation “OTHERS” does not prove independence from $E_M$.
 
 ## 3. Evidence Allocation: Matching, OTHERS, and Overlap
 
 ### 3.1 Coverage-aware residual weights
 
-For candidate evidence item \(e_i\), let
+For candidate evidence item $e_i$, let
 
-- \(q_i\geq0\): predeclared relevance or quality weight;
-- \(r_i\in[0,1]\): estimated fraction already explained or consumed by matching features;
-- \(\rho_i\in[0,1]\): admissibility factor for provenance, permission, and quality.
+- $q_i\geq0$: predeclared relevance or quality weight;
+- $r_i\in[0,1]$: estimated fraction already explained or consumed by matching features;
+- $\rho_i\in[0,1]$: admissibility factor for provenance, permission, and quality.
 
 Define
 
@@ -60,7 +60,7 @@ $$
 w_i^{O}=q_i(1-r_i)\rho_i.
 $$
 
-If \(\sum_i w_i^O>0\), normalize \(\tilde w_i^O=w_i^O/\sum_j w_j^O\). If the denominator is zero, the directional residual channel is **unavailable**, not a zero-valued directional observation.
+If $\sum_i w_i^O>0$, normalize $\tilde w_i^O=w_i^O/\sum_j w_j^O$. If the denominator is zero, the directional residual channel is **unavailable**, not a zero-valued directional observation.
 
 This is a candidate attribution mechanism, not a proof of statistical independence. Correlated observations, derived features, and shared sources require additional overlap tests or joint modeling.
 
@@ -72,8 +72,8 @@ Each accepted residual item should record:
 |---|---|
 | `evidence_id` | Stable identifier for the observation or derived signal |
 | `source_id` | Provenance and source reputation context |
-| `matching_coverage` | Estimated \(r_i\) and method of estimation |
-| `residual_weight` | \(w_i^O\) and normalization context |
+| `matching_coverage` | Estimated $r_i$ and method of estimation |
+| `residual_weight` | $w_i^O$ and normalization context |
 | `perspective_id` | Perspective under which the evidence is evaluated |
 | `directional_operator` | Operator and version used |
 | `support_or_counter` | Whether evidence supports or challenges a hypothesis |
@@ -84,7 +84,7 @@ The ledger makes overlap auditable and supports later feature promotion from OTH
 
 ## 4. Directional Evidence Is Not a Single Quantity
 
-For a perspective \(P\), a directional operator may produce a bounded signed signal
+For a perspective $P$, a directional operator may produce a bounded signed signal
 
 $$
 C_P(A,B\mid E_O)\in[-1,1].
@@ -92,27 +92,27 @@ $$
 
 Its meaning must be declared. Two distinct examples are:
 
-**Directional utility:** Does moving from \(A\) to \(B\) advance a goal? A metric-native candidate from MDI-002 is
+**Directional utility:** Does moving from $A$ to $B$ advance a goal? A metric-native candidate from MDI-002 is
 
 $$
 C_P^{\mathrm{goal}}(A,B)=\frac{d(A,G_P)-d(B,G_P)}{d(A,B)},\qquad A\ne B,
 $$
 
-where \(d\) is a metric and \(G_P\) a nonempty goal set, with well-defined finite distances. This lies in \([-1,1]\) by the reverse triangle inequality for distance-to-set. At \(A=B\), the operator must return a separately defined neutral/undefined status rather than divide by zero.
+where $d$ is a metric and $G_P$ a nonempty goal set, with well-defined finite distances. This lies in $[-1,1]$ by the reverse triangle inequality for distance-to-set. At $A=B$, the operator must return a separately defined neutral/undefined status rather than divide by zero.
 
-**Directional agreement:** Do \(A\) and \(B\) express similar perspective-conditioned orientation? If \(c_P(A),c_P(B)\in[-1,1]\), a possible agreement score is
+**Directional agreement:** Do $A$ and $B$ express similar perspective-conditioned orientation? If $c_P(A),c_P(B)\in[-1,1]$, a possible agreement score is
 
 $$
 S_P^{\mathrm{agree}}(A,B)=1-\frac{|c_P(A)-c_P(B)|}{2}\in[0,1].
 $$
 
-These answer different questions. A favorable transition is not necessarily a similar structure. An application must choose the intended semantics before combination with \(S_M\).
+These answer different questions. A favorable transition is not necessarily a similar structure. An application must choose the intended semantics before combination with $S_M$.
 
-Reliability \(R\), confidence \(K\), and evidence support are separate from the signed directional score; they should not be conflated.
+Reliability $R$, confidence $K$, and evidence support are separate from the signed directional score; they should not be conflated.
 
 ## 5. Three Candidate Scoring Compositions
 
-Let \(s=S_M(A,B)\in[0,1]\), and let \(p\in[0,1]\) be a properly interpreted and normalized directional score (for example \(p=(1+C_P)/2\)). These are not automatically comparable probabilities. Combining them requires calibration and semantic compatibility.
+Let $s=S_M(A,B)\in[0,1]$, and let $p\in[0,1]$ be a properly interpreted and normalized directional score (for example $p=(1+C_P)/2$). These are not automatically comparable probabilities. Combining them requires calibration and semantic compatibility.
 
 ### 5.1 Operator A: Convex mixture
 
@@ -120,39 +120,39 @@ $$
 S_A=(1-\lambda)s+\lambda p,\qquad \lambda\in[0,1].
 $$
 
-**Properties:** \(S_A\in[0,1]\); simple, interpretable, and monotone in each input for fixed \(\lambda\). If \(\lambda=0\), the baseline is recovered.
+**Properties:** $S_A\in[0,1]$; simple, interpretable, and monotone in each input for fixed $\lambda$. If $\lambda=0$, the baseline is recovered.
 
-**Risk:** A neutral or weak directional signal can dilute a strong baseline, and a missing signal must not be replaced by an arbitrary \(p=0.5\) while keeping \(\lambda>0\). Set \(\lambda=0\) when the channel is unavailable. This operator is best suited to calibrated channels that represent commensurate judgments.
+**Risk:** A neutral or weak directional signal can dilute a strong baseline, and a missing signal must not be replaced by an arbitrary $p=0.5$ while keeping $\lambda>0$. Set $\lambda=0$ when the channel is unavailable. This operator is best suited to calibrated channels that represent commensurate judgments.
 
 ### 5.2 Operator B: Bounded additive residual correction
 
-Let \(c\in[-1,1]\) be a signed residual effect and \(g\in[0,1]\) a governance gate:
+Let $c\in[-1,1]$ be a signed residual effect and $g\in[0,1]$ a governance gate:
 
 $$
 S_B=operatorname{clip}_{[0,1]}\left(s+\eta g c\right),\qquad \eta\geq0.
 $$
 
-**Properties:** baseline preservation at \(g=0\) or \(c=0\); explicit residual semantics; easily ablated.
+**Properties:** baseline preservation at $g=0$ or $c=0$; explicit residual semantics; easily ablated.
 
-**Risks:** clipping destroys magnitude information near boundaries, can reduce ranking resolution, and may conceal poor calibration. The \(\eta\) scale is not automatically portable across tasks. For similarity applications, \(c\) must express an *incremental similarity correction*, not an unrelated action utility.
+**Risks:** clipping destroys magnitude information near boundaries, can reduce ranking resolution, and may conceal poor calibration. The $\eta$ scale is not automatically portable across tasks. For similarity applications, $c$ must express an *incremental similarity correction*, not an unrelated action utility.
 
 ### 5.3 Operator C: Log-odds residual correction
 
-For \(s\in(0,1)\), define
+For $s\in(0,1)$, define
 
 $$
 S_C=\sigma\!\left(operatorname{logit}(s)+\eta g c\right),
 \quad \sigma(z)=\frac{1}{1+e^{-z}}.
 $$
 
-This preserves the open interval and supports additive residual effects in log-odds space. It is useful only when a log-odds interpretation is defensible or explicitly adopted as a score transform. A generic similarity score is **not necessarily a probability**. Numerical implementations should clamp the logit input to \([\epsilon,1-\epsilon]\) and document the consequences for exact baseline preservation at endpoints.
+This preserves the open interval and supports additive residual effects in log-odds space. It is useful only when a log-odds interpretation is defensible or explicitly adopted as a score transform. A generic similarity score is **not necessarily a probability**. Numerical implementations should clamp the logit input to $[\epsilon,1-\epsilon]$ and document the consequences for exact baseline preservation at endpoints.
 
 ### 5.4 Comparison
 
 | Criterion | Convex mixture | Additive residual | Log-odds residual |
 |---|---|---|---|
 | Output bounded | Yes | Yes, by clipping | Yes, for finite inputs |
-| Baseline preserved when channel absent | Yes, \(\lambda=0\) | Yes, \(g=0\) | Yes in interior, \(g=0\) |
+| Baseline preserved when channel absent | Yes, $\lambda=0$ | Yes, $g=0$ | Yes in interior, $g=0$ |
 | Natural interpretation | Two-channel combination | Incremental correction | Log-odds shift |
 | Main risk | Dilution | Saturation | Misleading probability semantics |
 | Calibration need | High | High | High |
@@ -167,7 +167,7 @@ $$
 g=g_{\mathrm{available}}\,g_{\mathrm{admissible}}\,g_{\mathrm{reliable}}\,g_{\mathrm{context}},
 $$
 
-with factors in \([0,1]\). This product is a **policy heuristic**, not a theorem about probabilistic confidence. If any hard condition fails, the extension returns the baseline score and an explicit reason code.
+with factors in $[0,1]$. This product is a **policy heuristic**, not a theorem about probabilistic confidence. If any hard condition fails, the extension returns the baseline score and an explicit reason code.
 
 Recommended states:
 
@@ -254,13 +254,13 @@ This is a conceptual specification, not executable code or a committed wire sche
 
 ## 8. Perspective-Specific Semantics and Asymmetry
 
-When \(P\) denotes a goal-directed transition, typically
+When $P$ denotes a goal-directed transition, typically
 
 $$
 C_P(A,B)\ne C_P(B,A).
 $$
 
-In the metric-native goal-potential example, \(C_P(B,A)=-C_P(A,B)\) for distinct points. This directional antisymmetry is often useful for action evaluation but incompatible with treating the raw transition signal as symmetric similarity.
+In the metric-native goal-potential example, $C_P(B,A)=-C_P(A,B)$ for distinct points. This directional antisymmetry is often useful for action evaluation but incompatible with treating the raw transition signal as symmetric similarity.
 
 Therefore each output must declare whether it represents:
 
@@ -269,11 +269,11 @@ Therefore each output must declare whether it represents:
 3. preference-conditioned candidate ranking;
 4. a general bounded evaluation score.
 
-The convenience transformation \(D_I=1-S_I\) yields a bounded *distance score* if \(S_I\in[0,1]\). It does **not** establish identity of indiscernibles, symmetry, or the triangle inequality. Metric properties require separate proofs and tests for a specific operator.
+The convenience transformation $D_I=1-S_I$ yields a bounded *distance score* if $S_I\in[0,1]$. It does **not** establish identity of indiscernibles, symmetry, or the triangle inequality. Metric properties require separate proofs and tests for a specific operator.
 
 ## 9. Multi-Perspective and Competitive Contexts
 
-Suppose \(P_1,\ldots,P_k\) represent distinct stakeholders or objectives. A simple weighted combination
+Suppose $P_1,\ldots,P_k$ represent distinct stakeholders or objectives. A simple weighted combination
 
 $$
 C_{\mathrm{ensemble}}=\sum_{j=1}^k\omega_j C_{P_j},\quad \omega_j\geq0,\quad\sum_j\omega_j=1
@@ -319,7 +319,7 @@ Observed residual signal
   -> revised coverage and attribution ledger
 ```
 
-Promotion must trigger recalculation of \(r_i\) and residual weights; otherwise the same signal can be counted in both the new matching feature and the old OTHERS channel. Feature retirement or demotion must also be possible when evidence weakens.
+Promotion must trigger recalculation of $r_i$ and residual weights; otherwise the same signal can be counted in both the new matching feature and the old OTHERS channel. Feature retirement or demotion must also be possible when evidence weakens.
 
 This mechanism connects BM-ODWEI to residual-driven structural growth and structural relay without presuming that every residual deserves a permanent feature.
 
@@ -336,7 +336,7 @@ The following are proposed normative requirements for an implementation claiming
 - **MDI-MET-007:** Enforce the output range promised by that operator.
 - **MDI-MET-008:** Keep reliability, uncertainty, and directional effect conceptually separate.
 - **MDI-MET-009:** Record material counter-evidence and conflicting perspectives.
-- **MDI-MET-010:** Do not label \(1-S_I\) a mathematical metric without proof.
+- **MDI-MET-010:** Do not label $1-S_I$ a mathematical metric without proof.
 - **MDI-MET-011:** Ensure feature promotion updates residual attribution.
 - **MDI-MET-012:** Provide reproducible fallback and abstention reason codes.
 - **MDI-MET-013:** Evaluate out-of-domain and correlated-evidence failure modes.
@@ -360,7 +360,7 @@ A candidate signal comes from a historically unreliable source. The directional 
 
 ### 13.4 Contradictory perspectives
 
-A move is beneficial under \(P_1\) and harmful under \(P_2\). A single average score may obscure a critical constraint. The adapter should preserve the score vector and, when warranted, abstain from scalar composition.
+A move is beneficial under $P_1$ and harmful under $P_2$. A single average score may obscure a critical constraint. The adapter should preserve the score vector and, when warranted, abstain from scalar composition.
 
 ## 14. Evaluation Plan and Falsifiable Hypotheses
 
@@ -407,7 +407,7 @@ Within the parent repository, this extension complements **BM-002** (OTHERS), **
 
 ## 17. Open Research Questions
 
-1. Can matching coverage \(r_i\) be estimated robustly when feature dependencies are learned and opaque?
+1. Can matching coverage $r_i$ be estimated robustly when feature dependencies are learned and opaque?
 2. Which composition operator best preserves ranking under distribution shift?
 3. When does residual directional evidence add genuine information rather than repackaging matching evidence?
 4. How should nontransitive structural directional relations be aggregated?
