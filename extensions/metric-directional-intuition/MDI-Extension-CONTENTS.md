@@ -7,7 +7,7 @@
 
 ## 1. Start Here
 
-- [README.md](README.md) — scope, research thesis, core definitions, architecture, integration boundaries, and recommended reading.
+- [MDI-Extension-README.md](MDI-Extension-README.md) — scope, research thesis, core definitions, architecture, integration boundaries, and recommended reading.
 - **This CONTENTS.md** — navigational map of the six MDI papers, figures, and research companions.
 
 ### Suggested reading paths

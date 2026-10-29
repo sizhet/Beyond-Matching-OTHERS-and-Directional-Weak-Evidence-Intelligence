@@ -16,7 +16,7 @@ A successful experiment must report not only performance gains but also the prov
 
 ## 2. Formal experimental vocabulary
 
-Let \((\mathcal X,d)\) be a metric space, \(P\) a perspective, \(A,B\in\mathcal X\) or structures represented in \(\mathcal X\), and \(E\) the admissible evidence. Let
+Let $(\mathcal X,d)$ be a metric space, $P$ a perspective, $A,B\in\mathcal X$ or structures represented in $\mathcal X$, and $E$ the admissible evidence. Let
 
 $$
 S_M(A,B)\in[0,1]
@@ -29,17 +29,17 @@ $$
 \longrightarrow (s_P,c_P,\pi_P),
 $$
 
-where \(s_P\in[-1,1]\) or a declared normalized equivalent, \(c_P\) is a separately defined confidence/calibration quantity, and \(\pi_P\) records provenance and assumptions. Do **not** silently interpret \(c_P\) as both the probability of a hypothesis and the reliability of its evidence source.
+where $s_P\in[-1,1]$ or a declared normalized equivalent, $c_P$ is a separately defined confidence/calibration quantity, and $\pi_P$ records provenance and assumptions. Do **not** silently interpret $c_P$ as both the probability of a hypothesis and the reliability of its evidence source.
 
-For a nonempty goal set \(G_P\subseteq\mathcal X\), define \(V_P(x)=d(x,G_P)\). For \(x\ne y\), the metric-native directional difference is
+For a nonempty goal set $G_P\subseteq\mathcal X$, define $V_P(x)=d(x,G_P)$. For $x\ne y$, the metric-native directional difference is
 
 $$
 C_P(x,y)=\frac{V_P(x)-V_P(y)}{d(x,y)}.
 $$
 
-The distance-to-set function is 1-Lipschitz, so \(|C_P(x,y)|\le 1\). This is a mathematical result under the stated assumptions, **not** an empirical hypothesis. The zero-distance case requires an explicit undefined/abstain policy or a separately justified convention. The existence of a metric alone does not specify \(G_P\), a preference, or a direction.
+The distance-to-set function is 1-Lipschitz, so $|C_P(x,y)|\le 1$. This is a mathematical result under the stated assumptions, **not** an empirical hypothesis. The zero-distance case requires an explicit undefined/abstain policy or a separately justified convention. The existence of a metric alone does not specify $G_P$, a preference, or a direction.
 
-When similarity is defined by \(S_I\in[0,1]\), \(D_I=1-S_I\) is a bounded *distance score*, not necessarily a metric: symmetry and the triangle inequality require separate demonstration.
+When similarity is defined by $S_I\in[0,1]$, $D_I=1-S_I$ is a bounded *distance score*, not necessarily a metric: symmetry and the triangle inequality require separate demonstration.
 
 ## 3. Experimental baselines and controlled variants
 
@@ -47,16 +47,16 @@ Use matched train/test partitions, identical candidate pools where applicable, f
 
 | ID | Variant | Description | Primary role |
 |---|---|---|---|
-| B0 | Matching-only | Existing \(S_M\), no directional channel | Primary baseline |
+| B0 | Matching-only | Existing $S_M$, no directional channel | Primary baseline |
 | B1 | Euclidean single sail | One normalized cosine perspective | Simple directional baseline |
 | B2 | Euclidean field/ensemble | Weighted sails or local vector field | Representation ablation |
 | B3 | Metric-native potential | Goal-set distance-change score | Non-Euclidean candidate |
-| B4 | Learned structural relation | Pairwise \(\Phi_P(x,y)\), not necessarily potential-derived | Expressivity control |
+| B4 | Learned structural relation | Pairwise $\Phi_P(x,y)$, not necessarily potential-derived | Expressivity control |
 | B5 | Residual-gated MDI | OTHERS-only evidence and explicit fallback | Evidence-governance test |
 | B6 | Hypothesis-guided MDI | Limited hypotheses, targeted tests, reputation | Compute-efficiency test |
 | B7 | Full relay/growth pipeline | Governed evidence transfer and feature promotion | Longitudinal test |
-| C1 | Random perspective | Randomized or shuffled \(P\) with matched complexity | Negative control |
-| C2 | Wrong perspective | Plausible but task-inappropriate \(P\) | Specificity control |
+| C1 | Random perspective | Randomized or shuffled $P$ with matched complexity | Negative control |
+| C2 | Wrong perspective | Plausible but task-inappropriate $P$ | Specificity control |
 | C3 | Evidence duplication | Replayed/correlated evidence with known ancestry | Leakage/robustness control |
 | C4 | Equal-budget search | Random, heuristic, or exhaustive candidate generation under budget | Selection-value control |
 
@@ -86,7 +86,7 @@ A comparison of B3 with B1 must not conflate representational advantage with bet
 
 **Disconfirmation.** No benefit after controlling for embedding quality and information availability; systematic failure under sparse goals or noisy metrics.
 
-**Boundary.** The mathematical bound on \(C_P\) does not imply predictive utility. Report sensitivity to goal-set choice.
+**Boundary.** The mathematical bound on $C_P$ does not imply predictive utility. Report sensitivity to goal-set choice.
 
 ### H-MDI-003 — Pre-decisional directional guidance improves candidate discovery
 
@@ -208,10 +208,10 @@ A comparison of B3 with B1 must not conflate representational advantage with bet
 
 The following should not be counted as experimentally validated discoveries merely because a test passes:
 
-- **P-MDI-001 (proved under assumptions):** For nonempty \(G_P\) in a metric space, \(V_P(x)=d(x,G_P)\) is 1-Lipschitz and \(|C_P(x,y)|\le1\) for \(x\ne y\).
-- **P-MDI-002 (local relation, conditional):** In a differentiable Euclidean setting, the directional difference has the first-order approximation \(-\nabla V_P(x)\cdot u\) for unit direction \(u\). This is not automatically a cosine unless the gradient is normalized and nonzero.
-- **P-MDI-003 (requires counterexample/qualification):** \(D_I=1-S_I\) need not be a metric; construct explicit failures of symmetry or triangle inequality for proposed variants.
-- **P-MDI-004 (contractual):** A residual adapter with a zero/invalid evidence gate must recover \(S_M\) exactly if specified to do so.
+- **P-MDI-001 (proved under assumptions):** For nonempty $G_P$ in a metric space, $V_P(x)=d(x,G_P)$ is 1-Lipschitz and $|C_P(x,y)|\le1$ for $x\ne y$.
+- **P-MDI-002 (local relation, conditional):** In a differentiable Euclidean setting, the directional difference has the first-order approximation $-\nabla V_P(x)\cdot u$ for unit direction $u$. This is not automatically a cosine unless the gradient is normalized and nonzero.
+- **P-MDI-003 (requires counterexample/qualification):** $D_I=1-S_I$ need not be a metric; construct explicit failures of symmetry or triangle inequality for proposed variants.
+- **P-MDI-004 (contractual):** A residual adapter with a zero/invalid evidence gate must recover $S_M$ exactly if specified to do so.
 - **P-MDI-005 (not generally true):** A pairwise structural preference relation need not be representable by one global potential; test cyclic preferences and nonconservative relations.
 
 ## 6. Shared measurement protocol
@@ -241,10 +241,10 @@ When a score is interpreted probabilistically, test calibration using a stated e
 | ID | Required property | Example test | Pass condition |
 |---|---|---|---|
 | CT-01 | Range declaration | Extreme vectors and goals | Output within declared range |
-| CT-02 | Undefined-case policy | \(x=y\), empty goal set | Explicit abstain/error/convention |
+| CT-02 | Undefined-case policy | $x=y$, empty goal set | Explicit abstain/error/convention |
 | CT-03 | Metric contract | Nonmetric dissimilarity input | Reject or clearly relabel |
-| CT-04 | Perspective provenance | Missing/changed \(P\) | Detect and record |
-| CT-05 | Baseline fallback | Missing directional evidence | Exact \(S_M\) when required |
+| CT-04 | Perspective provenance | Missing/changed $P$ | Detect and record |
+| CT-05 | Baseline fallback | Missing directional evidence | Exact $S_M$ when required |
 | CT-06 | Attribution integrity | Duplicate matching evidence | No unlogged double count |
 | CT-07 | Source independence | Copied relay packets | No false independent confirmations |
 | CT-08 | Reputation semantics | Change event definition | Reject incompatible update |

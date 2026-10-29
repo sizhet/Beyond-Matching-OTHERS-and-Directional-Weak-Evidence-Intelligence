@@ -51,13 +51,13 @@ $$
 C_{\mathrm E}(v,p)=\frac{\langle v,p\rangle}{\|v\|\,\|p\|}\in[-1,1].
 $$
 
-For a metric space \((\mathcal X,d)\), a nonempty goal set \(G\), and distinct points \(x,y\), let \(V_G(x)=\inf_{g\in G}d(x,g)\). Then
+For a metric space $(\mathcal X,d)$, a nonempty goal set $G$, and distinct points $x,y$, let $V_G(x)=\inf_{g\in G}d(x,g)$. Then
 
 $$
 C_{\mathrm M}(x,y\mid G)=\frac{V_G(x)-V_G(y)}{d(x,y)}\in[-1,1].
 $$
 
-The metric-native bound follows from the 1-Lipschitz property of distance to a nonempty set. If \(x=y\), the quotient is undefined and requires an explicit implementation policy. A positive value indicates movement toward the goal set in this potential-based sense.
+The metric-native bound follows from the 1-Lipschitz property of distance to a nonempty set. If $x=y$, the quotient is undefined and requires an explicit implementation policy. A positive value indicates movement toward the goal set in this potential-based sense.
 
 **Critical artwork check:** Mathematical labels in generated diagrams must be checked against the canonical formulas above. In particular, do **not** interpret a denominator containing a sum of distances or an added smoothing constant as the canonical metric-native formula unless the modified operator is separately defined and its properties proved. The initial composite may contain such illustrative notation; correct it before scientific publication. Similarly, cosine normalization requires nonzero vectors.
 
