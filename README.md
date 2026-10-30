@@ -200,6 +200,8 @@ Licensed under **Apache License 2.0**; see [LICENSE.txt](LICENSE.txt).
 
 **Sizhe Tan & GPT-Obot**
 
+DOI: 10.5281/zenodo.23786497
+
 ---
 
 ## 📚 DBM-SI Series Navigation
