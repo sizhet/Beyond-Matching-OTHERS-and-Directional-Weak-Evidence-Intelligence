@@ -324,8 +324,6 @@ A residual signal should be eligible to influence high-stakes decisions only und
 - **PIRP / PIRU:** possible transport and execution contracts for portable evidence and learned components.
 - **SSI:** provides authorized subjective goals and choice policies without owning or rewriting the evidence record.
 
-**Suggested figure placement:** Insert **Fig-001 — Beyond Matching Grand Map** after Section 3 when introducing the taxonomy, and **Fig-005 — OTHERS Structural Growth Loop** after Section 7. These are cross-paper illustrations; BM-006 should remain the primary explanatory home for Fig-005.
-
 ## 14. Open Questions
 
 1. What is the minimum evidence contract that preserves interoperability without imposing a universal ontology?
