@@ -158,7 +158,7 @@ A proposal mechanism `Q_θ` samples or constructs a bounded set of candidates us
 
 $$
 \mathcal A_K(x\mid P,E_t)=
-operatorname{Propose}_K\bigl(x,\mathcal G_P,E_t,\mathcal C\bigr), \tag{8}
+mathrm{Propose}_K\bigl(x,\mathcal G_P,E_t,\mathcal C\bigr), \tag{8}
 $$
 
 where `K` is a candidate budget and `𝒞` contains hard constraints. Candidates can be actions, observations, questions, local structural edits, or relay targets. Guidance may improve *candidate recall* even when the final scorer is unchanged.
@@ -211,7 +211,7 @@ This is an engineering heuristic, not a universal optimality result. Its value m
 A field may change with position, time, context, and evidence. Denote its update as
 
 $$
-P_{t+1}=operatorname{Revise}(P_t,E_{t+1},\text{constraints},\text{governance}). \tag{12}
+P_{t+1}=mathrm{Revise}(P_t,E_{t+1},\text{constraints},\text{governance}). \tag{12}
 $$
 
 Revisions should record whether a goal changed, new evidence arrived, an evaluator was recalibrated, or the system merely shifted computational attention. These events have different meanings and audit requirements.

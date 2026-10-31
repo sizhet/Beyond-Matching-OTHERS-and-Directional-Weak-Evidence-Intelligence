@@ -129,7 +129,7 @@ $$
 Let $c\in[-1,1]$ be a signed residual effect and $g\in[0,1]$ a governance gate:
 
 $$
-S_B=operatorname{clip}_{[0,1]}\left(s+\eta g c\right),\qquad \eta\geq0.
+S_B=mathrm{clip}_{[0,1]}\left(s+\eta g c\right),\qquad \eta\geq0.
 $$
 
 **Properties:** baseline preservation at $g=0$ or $c=0$; explicit residual semantics; easily ablated.
@@ -141,7 +141,7 @@ $$
 For $s\in(0,1)$, define
 
 $$
-S_C=\sigma\!\left(operatorname{logit}(s)+\eta g c\right),
+S_C=\sigma\!\left(mathrm{logit}(s)+\eta g c\right),
 \quad \sigma(z)=\frac{1}{1+e^{-z}}.
 $$
 

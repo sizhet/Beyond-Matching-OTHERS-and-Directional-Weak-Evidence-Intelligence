@@ -95,13 +95,13 @@ A cheap test may inspect an additional sensor reading, sample a small neighborho
 **Information gain** is one test criterion:
 
 $$
-operatorname{EIG}(t)=\mathcal H(b)-\mathbb E_{o\sim p(o\mid t)}[\mathcal H(b(\cdot\mid o,t))],
+mathrm{EIG}(t)=\mathcal H(b)-\mathbb E_{o\sim p(o\mid t)}[\mathcal H(b(\cdot\mid o,t))],
 $$
 
 where $\mathcal H$ is entropy. However, information gain alone may prefer a scientifically interesting but decision-irrelevant test. The primary criterion for action guidance should be **expected value of sample information (EVSI)**:
 
 $$
-operatorname{EVSI}(t)=
+mathrm{EVSI}(t)=
 \mathbb E_o\left[\max_a\mathbb E_{H\mid o,t}U(a,H,P)\right]
 -\max_a\mathbb E_H U(a,H,P).
 $$
@@ -109,7 +109,7 @@ $$
 The system should consider a test only when its estimated benefit justifies its observation, latency, and computation costs. With cost $c(t)$, a simple myopic selection rule is
 
 $$
-t^*=\arg\max_{t\in\mathcal T}\{operatorname{EVSI}(t)-\lambda c(t)\},
+t^*=\arg\max_{t\in\mathcal T}\{mathrm{EVSI}(t)-\lambda c(t)\},
 $$
 
 subject to hard safety, privacy, and resource constraints. The null option **do not test** must remain available. For approximate EVSI, report model assumptions and estimation uncertainty; an estimated positive value is not a guarantee of real-world benefit.
@@ -127,7 +127,7 @@ Reputation is not a universal scalar that certifies truth. At minimum, distingui
 For binary outcomes with conditionally exchangeable trials, a Beta-Bernoulli bookkeeping model gives
 
 $$
-\theta\sim operatorname{Beta}(\alpha,\beta),\qquad
+\theta\sim mathrm{Beta}(\alpha,\beta),\qquad
 \mathbb E[\theta\mid s,f]=\frac{\alpha+s}{\alpha+\beta+s+f},
 $$
 
@@ -174,7 +174,7 @@ An evidence ledger should assign every observation an immutable identity and rec
 A generic, **nonprobabilistic** residual correction is
 
 $$
-S_{\mathrm{new}}=operatorname{clip}_{[0,1]}\bigl(S_M+\eta\,g\,\Delta_{\mathrm{OTHERS}}\bigr),
+S_{\mathrm{new}}=mathrm{clip}_{[0,1]}\bigl(S_M+\eta\,g\,\Delta_{\mathrm{OTHERS}}\bigr),
 $$
 
 where $S_M$ is baseline matching similarity, $g$ is a governance gate, and $\Delta_{\mathrm{OTHERS}}$ is a signed, bounded correction derived from residual evidence. This score is not automatically calibrated; the gate is not a substitute for explicit dependence handling. If no admissible directional evidence exists, the adapter should return $S_M$ unchanged, with a visible reason code.

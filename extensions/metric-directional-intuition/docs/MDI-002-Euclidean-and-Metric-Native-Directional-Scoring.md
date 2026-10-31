@@ -263,13 +263,13 @@ $$
 Here `S_P` must be chosen deliberately: a candidate's directional **utility** is not automatically a pairwise **agreement** score. Equation (17) is bounded when both inputs are valid. It may nonetheless lower a high matching score when directional evidence is neutral, which motivates an alternative residual correction:
 
 $$
-S_I=operatorname{clip}_{[0,1]}\left(S_M+\eta g_P C_P\right), \tag{18}
+S_I=mathrm{clip}_{[0,1]}\left(S_M+\eta g_P C_P\right), \tag{18}
 $$
 
 where `η≥0` controls strength and `g_P∈[0,1]` is an evidence-validity/reliability gate. With no valid directional evidence, set `g_P=0` and return `S_M` unchanged. A smooth alternative for `0<S_M<1` is
 
 $$
-S_I=\sigma\left(operatorname{logit}(S_M)+\eta g_P C_P\right). \tag{19}
+S_I=\sigma\left(mathrm{logit}(S_M)+\eta g_P C_P\right). \tag{19}
 $$
 
 The clipping form can saturate and cause ties; the logit form needs explicit treatment at baseline endpoints and calibration of its effect size. Neither composition is proven optimal. Evidence allocation must avoid double-counting features already credited by Matching; MDI-004 specifies the OTHERS/residual interface.

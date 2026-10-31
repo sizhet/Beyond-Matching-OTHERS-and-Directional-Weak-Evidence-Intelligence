@@ -52,7 +52,7 @@ $$
 An MDI operator produces a directional evaluation, together with confidence or reliability metadata and supporting evidence:
 
 $$
-operatorname{DirectionalEvaluate}(A,B,P,M,E)
+mathrm{DirectionalEvaluate}(A,B,P,M,E)
 \longrightarrow (s,c,\pi),
 $$
 
@@ -157,7 +157,7 @@ $$
 This guarantees `[0,1]` outputs but can shift a strong matching score merely because a neutral directional score is supplied. An alternative is a residual correction:
 
 $$
-S_I=operatorname{clip}_{[0,1]}(S_M+\eta g_P C_{\mathrm{OTHERS}}),
+S_I=mathrm{clip}_{[0,1]}(S_M+\eta g_P C_{\mathrm{OTHERS}}),
 $$
 
 where `η ≥ 0` is a correction budget, `g_P ∈ [0,1]` is a declared evidence-validity/reliability gate, and `C_OTHERS ∈ [-1,1]` is a signed contribution from evidence not already credited to matching. When no usable directional evidence exists, set `g_P=0`, yielding `S_I=S_M`.
@@ -165,7 +165,7 @@ where `η ≥ 0` is a correction budget, `g_P ∈ [0,1]` is a declared evidence-
 A logit-space alternative can avoid hard clipping for interior baseline scores:
 
 $$
-S_I=\sigma\!\left(operatorname{logit}(S_M)+\eta g_P C_{\mathrm{OTHERS}}\right),\quad 0<S_M<1.
+S_I=\sigma\!\left(mathrm{logit}(S_M)+\eta g_P C_{\mathrm{OTHERS}}\right),\quad 0<S_M<1.
 $$
 
 None of these aggregation rules is claimed to be optimal. The choice must be tested for ranking quality, calibration, stability, and evidence double counting. A common additive term can be dropped for *ranking under fixed conditions* but not for preserving absolute calibrated scores.

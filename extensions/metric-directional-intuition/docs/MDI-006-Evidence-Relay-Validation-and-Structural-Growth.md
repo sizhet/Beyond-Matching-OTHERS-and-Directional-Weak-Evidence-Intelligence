@@ -205,7 +205,7 @@ Unexplained residual
 A proposed feature $f_e$ should be promoted only if it (a) has a stable operational definition, (b) provides incremental predictive or decision value on held-out data, (c) does not double-count existing evidence, (d) satisfies policy constraints, and (e) retains counter-evidence and provenance. A useful decision criterion is
 
 $$
-\Delta U_e=U(\mathcal F\cup\{f_e\})-U(\mathcal F)-operatorname{Cost}(f_e),
+\Delta U_e=U(\mathcal F\cup\{f_e\})-U(\mathcal F)-mathrm{Cost}(f_e),
 $$
 
 estimated out of sample and subject to governance gates. Positive $\Delta U_e$ is necessary under this objective, but not sufficient for universal promotion. Domain drift may require rollback; a feature may remain useful only for a specific perspective or context.
