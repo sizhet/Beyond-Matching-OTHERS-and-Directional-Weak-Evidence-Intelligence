@@ -68,7 +68,7 @@ $$
 A separate object is the cost of moving from state `x` to `y`:
 
 $$
-C_{\rightarrow}(x,y\mid a,P,C)=\mathbb E[operatorname{Cost}(a,x\to y)\mid P,C,E].
+C_{\rightarrow}(x,y\mid a,P,C)=\mathbb E[mathrm{Cost}(a,x\to y)\mid P,C,E].
 $$
 
 The reverse transition may have a different cost. Asymmetry here reflects real resources, time, risk, irreversibility, and institutional constraints; it should not be mislabeled as a symmetric metric.
@@ -78,7 +78,7 @@ The reverse transition may have a different cost. Asymmetry here reflects real r
 Finally, an action value evaluates consequences, not resemblance:
 
 $$
-Q(a\mid b,P,G,C)=\mathbb E_{\omega\sim b}[U(a,\omega\mid P,G,C)]-\lambda\,operatorname{Risk}(a\mid b).
+Q(a\mid b,P,G,C)=\mathbb E_{\omega\sim b}[U(a,\omega\mid P,G,C)]-\lambda\,mathrm{Risk}(a\mid b).
 $$
 
 Here `b` is a belief distribution over relevant states, `G` is a goal specification, and `lambda` is a declared risk parameter. This is a candidate objective, not a universal law of rational behavior. Hard safety constraints may restrict the admissible action set before optimization.

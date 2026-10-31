@@ -185,9 +185,9 @@ A proposed structure should not be promoted merely because it correlates with a 
 Let $\Delta V(H)$ be estimated out-of-sample incremental value, $C(H)$ implementation and maintenance cost, and $\rho(H)$ an uncertainty or risk penalty. One possible policy is:
 
 $$
-operatorname{Promote}(H)=1
+mathrm{Promote}(H)=1
 \quad\text{only if}\quad
-operatorname{LCB}_{1-\alpha}[\Delta V(H)]-C(H)-\rho(H)>\tau
+mathrm{LCB}_{1-\alpha}[\Delta V(H)]-C(H)-\rho(H)>\tau
 $$
 
 *and* all mandatory provenance, safety, and authority gates pass. This rule is illustrative: the lower confidence bound, penalty, and threshold must be defined for the task. For high-stakes uses, statistical evidence alone is insufficient for deployment approval.
@@ -201,7 +201,7 @@ Every promoted item should specify a revalidation schedule, monitoring signals, 
 After a candidate $H_t$ is validated and integrated, the system should not simply subtract all supporting observations from OTHERS. The residual is better expressed operationally as:
 
 $$
-O_{t+1}=operatorname{Residual}(E_{\le t+1},K_{t+1},\epsilon,P_{t+1}),
+O_{t+1}=mathrm{Residual}(E_{\le t+1},K_{t+1},\epsilon,P_{t+1}),
 $$
 
 where $\epsilon$ is an adequacy tolerance. Previously understood evidence can become residual again if context changes or an explanation fails.

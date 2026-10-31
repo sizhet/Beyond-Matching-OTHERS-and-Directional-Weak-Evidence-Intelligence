@@ -71,11 +71,11 @@ A fourth, cross-cutting **governance control plane** defines admissibility, acce
 Formally, let an evidence collection be $\mathcal E$, a perspective contract $P$, context $C$, goal $G$, and policy $\Pi$:
 
 $$
-\mathcal E^{\mathrm{adm}} = operatorname{Admit}(\mathcal E; C,\Pi),
+\mathcal E^{\mathrm{adm}} = mathrm{Admit}(\mathcal E; C,\Pi),
 $$
 
 $$
-\mathbf R = operatorname{Score}(\mathcal E^{\mathrm{adm}};P,C),
+\mathbf R = mathrm{Score}(\mathcal E^{\mathrm{adm}};P,C),
 $$
 
 $$
